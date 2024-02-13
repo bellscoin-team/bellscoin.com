@@ -5,6 +5,7 @@ import bellsGenesis53 from '~/assets/Bells Genesis-53.png'
 import bellsGenesis62 from '~/assets/Bells Genesis-62.png'
 import bellsGenesis63 from '~/assets/Bells Genesis-63.png'
 import bellsGenesis7 from '~/assets/Bells Genesis-7.png'
+import { useViewportSize } from '~/util/use-viewport-size.ts'
 
 import {
 	CoinGecko,
@@ -73,11 +74,9 @@ const linkGroups: LinkGroup[] = [
 		text: 'ORDINALS',
 		links: [
 			{ text: 'BELLSCRIBE', href: 'https://bellscribe.com/' },
-			{ text: 'BELS BELLS', href: 'https://belsbells.com/' },
-			{ text: 'BELLS COIN PUNKS', href: 'https://bellscoinpunks.xyz/' },
 			{ text: 'BELLINALS INDEXER', href: 'https://bellinals.nintondo.io/' },
 			{ text: 'BELINALS', href: 'https://bell.drc20.fun/' },
-			{ text: 'BRC-20 INDEXER', href: 'https://bells-indexer.netlify.app/' },
+			{ text: 'BEL-20 INDEXER', href: 'https://bells-indexer.netlify.app/' },
 		],
 	},
 ]
@@ -88,9 +87,15 @@ export default function Section1Header() {
 		setIsNavOpen(false)
 	}
 
+	const isMobile = useViewportSize() === 'sm'
+	if (!isMobile && isNavOpen) {
+		setIsNavOpen(false)
+	}
+
 	return (
 		<header>
 			<div
+				aria-hidden={!isNavOpen}
 				className={`${
 					isNavOpen ? 'visible' : 'invisible'
 				} fixed z-[2] h-screen w-screen bg-[rgba(0,0,0,0.5)]`}
@@ -100,9 +105,18 @@ export default function Section1Header() {
 					}
 				}}
 			>
-				<nav className="ml-auto max-h-full w-[332px] overflow-y-auto rounded-l-[15px] border-[2px] border-[#08835E] bg-[#FFE46A] py-[18px] pl-[8px] pr-[20px] font-mogra leading-[1.2] text-[#525252] drop-shadow-[-30px_30px_30px_rgba(0,0,0,0.8)] [&_*]:tracking-305">
-					<div
-						className="absolute right-0 top-0 flex h-[47px] cursor-pointer items-center px-[14px]"
+				<nav
+					ref={(instance) => {
+						if (isNavOpen) {
+							instance?.focus()
+						}
+					}}
+					className="ml-auto max-h-full w-[332px] overflow-y-auto rounded-l-[15px] border-[2px] border-[#08835E] bg-[#FFE46A] py-[18px] pl-[8px] pr-[20px] font-mogra leading-[1.2] text-[#525252] outline-none drop-shadow-[-30px_30px_30px_rgba(0,0,0,0.8)] [&_*]:tracking-305"
+					tabIndex={0}
+				>
+					<button
+						aria-label="Close menu"
+						className="absolute right-0 top-0 flex h-[47px] cursor-pointer items-center bg-transparent px-[14px]"
 						onClick={onClose}
 					>
 						<svg width={18} height={18} viewBox="0 0 18 18">
@@ -123,7 +137,7 @@ export default function Section1Header() {
 								strokeWidth={2}
 							/>
 						</svg>
-					</div>
+					</button>
 					{linkGroups.map((linkGroup) => (
 						<div
 							key={linkGroup.text}
@@ -167,8 +181,9 @@ export default function Section1Header() {
 				</nav>
 			</div>
 			<div className="h-[47px] bg-[#E60012] lg:h-[184px]">
-				<div
-					className="float-right flex h-full cursor-pointer flex-col justify-center gap-y-[5px] px-[14px] *:h-[2px] *:bg-white lg:hidden"
+				<button
+					aria-label="Open menu"
+					className="float-right flex h-full cursor-pointer flex-col justify-center gap-y-[5px] bg-transparent px-[14px] *:h-[2px] *:bg-white lg:hidden"
 					onClick={() => {
 						document.body.style.overflow = 'hidden'
 						setIsNavOpen(true)
@@ -177,7 +192,7 @@ export default function Section1Header() {
 					<div className="w-[18px]" />
 					<div className="w-[12px]" />
 					<div className="w-[18px]" />
-				</div>
+				</button>
 				<nav className="invisible relative z-[2] mx-auto flex h-full max-w-[2560px] items-center justify-end space-x-[40px] pr-[90px] text-center font-mogra text-[24px] leading-[1.2] tracking-305 text-white lg:visible">
 					{linkGroups.map((linkGroup) => (
 						<div
