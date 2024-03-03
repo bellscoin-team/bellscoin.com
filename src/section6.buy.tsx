@@ -70,7 +70,7 @@ const typingObserver = new IntersectionObserver((entries) => {
 				[
 					'AND WE NEED MORE..',
 					null,
-					'CONTACT TO ',
+					'CONTACT ON ',
 					{
 						tagName: 'a',
 						text: 'DISCORD',
@@ -489,7 +489,7 @@ export default function Section6Buy() {
 					<p className="invisible">
 						AND WE NEED MORE..
 						<br />
-						CONTACT TO{' '}
+						CONTACT ON{' '}
 						<a
 							href="https://t.co/4DCHZEdSSE"
 							target="_blank"
