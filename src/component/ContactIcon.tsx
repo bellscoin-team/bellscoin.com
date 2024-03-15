@@ -1,6 +1,6 @@
 import sprite from '~/assets/sprite.svg'
 
-export function CoinGecko({ width }: { width: number }) {
+export function CoinGecko({ className }: { className?: string }) {
 	return (
 		<a
 			href="https://www.coingecko.com/en/coins/bellscoin"
@@ -8,7 +8,7 @@ export function CoinGecko({ width }: { width: number }) {
 			rel="noreferrer"
 			className="group"
 		>
-			<svg height={width} width={width}>
+			<svg viewBox="0 0 20 20" className={className}>
 				<use
 					href={`${sprite}#coinGecko`}
 					id="coinGecko-red"
@@ -24,7 +24,7 @@ export function CoinGecko({ width }: { width: number }) {
 	)
 }
 
-export function Discord({ width }: { width: number }) {
+export function Discord({ className }: { className?: string }) {
 	return (
 		<a
 			href="https://t.co/4DCHZEdSSE"
@@ -33,10 +33,9 @@ export function Discord({ width }: { width: number }) {
 			className="group"
 		>
 			<svg
-				height={width}
-				width={width}
+				viewBox="0 0 20 20"
 				fill="#E60012"
-				className="group-hover:fill-white group-focus:fill-white"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
 			>
 				<use href={`${sprite}#discord`} />
 			</svg>
@@ -44,7 +43,7 @@ export function Discord({ width }: { width: number }) {
 	)
 }
 
-export function Github({ width }: { width: number }) {
+export function Github({ className }: { className?: string }) {
 	return (
 		<a
 			href="https://github.com/Nintondo"
@@ -53,10 +52,9 @@ export function Github({ width }: { width: number }) {
 			className="group"
 		>
 			<svg
-				height={width}
-				width={width}
+				viewBox="0 0 20 20"
 				fill="#E60012"
-				className="group-hover:fill-white group-focus:fill-white"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
 			>
 				<use href={`${sprite}#github`} />
 			</svg>
@@ -64,7 +62,7 @@ export function Github({ width }: { width: number }) {
 	)
 }
 
-export function Linktree({ height }: { height: number }) {
+export function Linktree({ className }: { className?: string }) {
 	return (
 		<a
 			href="https://linktr.ee/bellscoin"
@@ -73,10 +71,9 @@ export function Linktree({ height }: { height: number }) {
 			className="group"
 		>
 			<svg
-				height={height}
 				viewBox="0 0 40 48"
 				fill="#E60012"
-				className="group-hover:fill-white group-focus:fill-white"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
 			>
 				<use href={`${sprite}#linktree`} />
 			</svg>
@@ -84,7 +81,7 @@ export function Linktree({ height }: { height: number }) {
 	)
 }
 
-export function Telegram({ width }: { width: number }) {
+export function Telegram({ className }: { className?: string }) {
 	return (
 		<a
 			href="https://t.me/BellsCoinOfficial"
@@ -93,10 +90,9 @@ export function Telegram({ width }: { width: number }) {
 			className="group"
 		>
 			<svg
-				height={width}
-				width={width}
+				viewBox="0 0 20 20"
 				fill="#E60012"
-				className="group-hover:fill-white group-focus:fill-white"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
 			>
 				<use href={`${sprite}#telegram`} />
 			</svg>
@@ -104,7 +100,7 @@ export function Telegram({ width }: { width: number }) {
 	)
 }
 
-export function Twitter({ height }: { height: number }) {
+export function Twitter({ className }: { className?: string }) {
 	return (
 		<a
 			href="https://twitter.com/_Bellscoin"
@@ -113,10 +109,9 @@ export function Twitter({ height }: { height: number }) {
 			className="group"
 		>
 			<svg
-				height={height}
 				viewBox="0 0 1200 1227"
 				fill="#E60012"
-				className="group-hover:fill-white group-focus:fill-white"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
 			>
 				<use href={`${sprite}#twitter`} />
 			</svg>

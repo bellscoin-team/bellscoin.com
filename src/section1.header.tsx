@@ -233,13 +233,13 @@ export default function Section1Header() {
 				</nav>
 			</div>
 			<div className="h-[43px] bg-[#FFE46A] lg:h-[96px]">
-				<nav className="invisible relative z-[1] mx-auto flex h-full max-w-[2560px] items-center justify-end space-x-[40px] pr-[90px] text-[#FFE46A] lg:visible">
-					<Github width={50} />
-					<Twitter height={44} />
-					<Telegram width={50} />
-					<Discord width={50} />
-					<CoinGecko width={50} />
-					<Linktree height={48} />
+				<nav className="invisible relative z-[1] mx-auto flex h-full max-w-[2560px] items-center justify-end gap-x-[40px] pr-[90px] text-[#FFE46A] lg:visible">
+					<Github className="w-[50px]" />
+					<Twitter className="h-[44px]" />
+					<Telegram className="w-[50px]" />
+					<Discord className="w-[50px]" />
+					<CoinGecko className="w-[50px]" />
+					<Linktree className="h-[48px]" />
 				</nav>
 			</div>
 		</header>

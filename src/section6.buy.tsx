@@ -96,8 +96,6 @@ const typingObserver = new IntersectionObserver((entries) => {
 })
 
 export default function Section6Buy() {
-	const isMobile = useViewportSize() === 'sm'
-
 	return (
 		<section className="bg-gradient-to-b from-[#C7FFEE] to-[#F4BE04] pb-[50px] *:tracking-[0.015em] lg:pb-[100px]">
 			<div className="relative overflow-hidden pb-[50px] pt-[48px] lg:pb-[100px] lg:pt-[260px]">
@@ -534,12 +532,12 @@ export default function Section6Buy() {
 				<img src={bellsGenesis35} alt="" width={90} height={90} />
 				<h3 className="text-[#1D644F]">Contact</h3>
 				<div className="col-start-2 mt-[10px] flex items-center gap-x-[20px] text-[#F0C10F] lg:gap-x-[32px]">
-					<Github width={isMobile ? 20 : 44} />
-					<Twitter height={isMobile ? 20 : 40} />
-					<Telegram width={isMobile ? 20 : 44} />
-					<Discord width={isMobile ? 20 : 44} />
-					<CoinGecko width={isMobile ? 20 : 44} />
-					<Linktree height={isMobile ? 20 : 44} />
+					<Github className="w-[20px] lg:w-[44px]" />
+					<Twitter className="h-[20px] lg:h-[40px]" />
+					<Telegram className="w-[20px] lg:w-[44px]" />
+					<Discord className="w-[20px] lg:w-[44px]" />
+					<CoinGecko className="w-[20px] lg:w-[44px]" />
+					<Linktree className="h-[20px] lg:h-[42px]" />
 				</div>
 			</div>
 		</section>
