@@ -221,7 +221,12 @@ export default function Section1Header() {
 											key={link.text}
 											className="text-white focus-within:text-[#08835E] hover:text-[#08835E]"
 										>
-											<a href={link.href} target="_blank" rel="noreferrer">
+											<a
+												href={link.href}
+												target="_blank"
+												rel="noreferrer"
+												className="block"
+											>
 												{link.text}
 											</a>
 										</li>
