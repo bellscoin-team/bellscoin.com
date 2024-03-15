@@ -528,7 +528,7 @@ export default function Section6Buy() {
 					<span className="text-[#08835E]">Our $bells address :</span>
 					<br />
 					<span className="break-all text-[#7D5252]">
-						BCT6G3f8Z1s2aFxBMwWmTDp1Qk6k9twCRU
+						BEGJMVqLYRJkGwvwmsZDDjERpzxGqdyzXT
 					</span>
 				</p>
 				<img src={bellsGenesis35} alt="" width={90} height={90} />
