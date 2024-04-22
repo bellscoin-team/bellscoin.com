@@ -103,7 +103,7 @@ export function Telegram({ className }: { className?: string }) {
 export function Twitter({ className }: { className?: string }) {
 	return (
 		<a
-			href="https://twitter.com/_Bellscoin"
+			href="https://twitter.com/BellsChain"
 			target="_blank"
 			rel="noreferrer"
 			className="group"
