@@ -29,9 +29,9 @@ interface LinkGroup {
 const linkGroups: LinkGroup[] = [
 	{
 		icon: bellsGenesis7,
-		text: 'BELSCAN',
+		text: 'SCAN',
 		links: [
-			{ text: 'BELSCAN', href: 'https://belscan.io/' },
+			{ text: 'NINTONDO', href: 'https://nintondo.io/' },
 			{ text: 'BELLS QUARK', href: 'https://bells.quark.blue/tx/' },
 		],
 	},
@@ -215,7 +215,7 @@ export default function Section1Header() {
 								<span className="inline-block w-min">{linkGroup.text}</span>
 							)}
 							{linkGroup.links ? (
-								<ul className="invisible absolute flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[24px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
+								<ul className="invisible absolute z-[1] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[24px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
 									{linkGroup.links.map((link) => (
 										<li
 											key={link.text}
