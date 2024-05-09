@@ -41,30 +41,43 @@ export default function Section4Tokenomics() {
 	>('loading')
 
 	useEffect(() => {
-		fetch('https://v2.belscan.io/ext/getmoneysupply')
-			.then(async (response) => {
-				setCurrentSupply(Math.floor(Number(await response.text())))
+		fetch('http://13.124.182.6/v1/gettotalamount')
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok')
+				}
+				return response.json() // JSON 형태로 응답을 파싱
+			})
+			.then((data: { total_amount: string }) => {
+				setCurrentSupply(Math.floor(Number(data.total_amount))) // total_amount 값을 사용
 			})
 			.catch(() => {
 				setCurrentSupply('not available')
 			})
 
-		fetch('https://v2.belscan.io/ext/getcurrentprice')
+		fetch(
+			'https://api.coingecko.com/api/v3/simple/price?ids=bellscoin&vs_currencies=usd',
+		)
 			.then(async (response) => {
 				const json = (await response.json()) as {
-					last_price_usdt: number
-					last_price_usd: number
+					bellscoin: { usd: number }
 				}
-				const priceInUsd = json.last_price_usd
+				const priceInUsd = json.bellscoin.usd
 				setPrice(Number(priceInUsd.toString().slice(0, 10)))
 			})
 			.catch(() => {
 				setPrice('not available')
 			})
 
-		fetch('https://v2.belscan.io/api/getnetworkhashps')
-			.then(async (response) => {
-				setHashRate(Number(await response.text()))
+		fetch('http://13.124.182.6/v1/getnetworkhashps')
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok')
+				}
+				return response.json() // JSON 형태로 응답을 파싱
+			})
+			.then((response:{network_hash:"string"}) => {
+				setHashRate(Number(response.network_hash))
 			})
 			.catch(() => {
 				setHashRate('not available')
