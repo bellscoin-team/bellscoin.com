@@ -55,14 +55,15 @@ export default function Section4Tokenomics() {
 				setCurrentSupply('not available')
 			})
 
-		fetch(
-			'https://api.coingecko.com/api/v3/simple/price?ids=bellscoin&vs_currencies=usd',
-		)
-			.then(async (response) => {
-				const json = (await response.json()) as {
-					bellscoin: { usd: number }
+		fetch('http://13.124.182.6/v1/getprice')
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok')
 				}
-				const priceInUsd = json.bellscoin.usd
+				return response.json() // JSON 형태로 응답을 파싱
+			})
+			.then((data:any) => {
+				const priceInUsd = data.data.price
 				setPrice(Number(priceInUsd.toString().slice(0, 10)))
 			})
 			.catch(() => {
@@ -76,7 +77,7 @@ export default function Section4Tokenomics() {
 				}
 				return response.json() // JSON 형태로 응답을 파싱
 			})
-			.then((response:{network_hash:"string"}) => {
+			.then((response: { network_hash: 'string' }) => {
 				setHashRate(Number(response.network_hash))
 			})
 			.catch(() => {
