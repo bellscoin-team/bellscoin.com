@@ -41,7 +41,7 @@ export default function Section4Tokenomics() {
 	>('loading')
 
 	useEffect(() => {
-		fetch('https://api.bellscoin.com/v1/gettotalamount')
+		fetch('https://collection.bellscoin.com/v1/gettotalamount')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
@@ -55,7 +55,7 @@ export default function Section4Tokenomics() {
 				setCurrentSupply('not available')
 			})
 
-		fetch('https://api.bellscoin.com/v1/getprice')
+		fetch('https://collection.bellscoin.com/v1/getprice')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
@@ -70,7 +70,7 @@ export default function Section4Tokenomics() {
 				setPrice('not available')
 			})
 
-		fetch('https://api.bellscoin.com/v1/getnetworkhashps')
+		fetch('https://collection.bellscoin.com/v1/getnetworkhashps')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
