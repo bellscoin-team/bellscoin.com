@@ -49,7 +49,7 @@ export default function Section4Tokenomics() {
 				return response.json() 
 			})
 			.then((data: { circulating_supply: string }) => {
-				setCurrentSupply(Math.floor(Number(data.circulating_supply))) // total_amount 
+				setCurrentSupply(Math.floor(Number(data.circulating_supply)/100000000)) // total_amount 
 			})
 			.catch(() => {
 				setCurrentSupply('not available')
