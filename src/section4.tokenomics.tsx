@@ -41,15 +41,15 @@ export default function Section4Tokenomics() {
 	>('loading')
 
 	useEffect(() => {
-		fetch('https://collection.bellscoin.com/api/gettotalamount')
+		fetch('https://api.nintondo.io/api/stats/bells')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
 				}
-				return response.json() // JSON 형태로 응답을 파싱
+				return response.json() 
 			})
-			.then((data: { total_amount: string }) => {
-				setCurrentSupply(Math.floor(Number(data.total_amount))) // total_amount 값을 사용
+			.then((data: { circulating_supply: string }) => {
+				setCurrentSupply(Math.floor(Number(data.circulating_supply))) // total_amount 
 			})
 			.catch(() => {
 				setCurrentSupply('not available')
