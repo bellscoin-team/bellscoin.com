@@ -46,10 +46,10 @@ export default function Section4Tokenomics() {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
 				}
-				return response.json() 
+				return response.json() // JSON 형태로 응답을 파싱
 			})
-			.then((data: { circulating_supply: string }) => {
-				setCurrentSupply(Math.floor(Number(data.circulating_supply)/100000000)) // total_amount 
+			.then((data: { total_amount: string }) => {
+				setCurrentSupply(Math.floor(Number(data.total_amount))) // total_amount 값을 사용
 			})
 			.catch(() => {
 				setCurrentSupply('not available')
