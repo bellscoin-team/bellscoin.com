@@ -41,7 +41,7 @@ export default function Section4Tokenomics() {
 	>('loading')
 
 	useEffect(() => {
-		fetch('https://api.nintondo.io/api/stats/bells')
+		fetch('https://collection.bellscoin.com/api/gettotalamount')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
