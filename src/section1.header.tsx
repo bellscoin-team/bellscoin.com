@@ -38,7 +38,7 @@ const linkGroups: LinkGroup[] = [
 	{
 		icon: bellsGenesis37,
 		text: 'NODE WALLET',
-		href: 'https://github.com/Nintondo/bellscoin/releases/tag/2.0.0',
+		href: 'https://github.com/Nintondo/bellscoinV3',
 	},
 	{
 		icon: bellsGenesis62,
@@ -46,13 +46,13 @@ const linkGroups: LinkGroup[] = [
 		links: [
 			{
 				text: 'NODE(QT) WALLETS',
-				href: 'https://github.com/Nintondo/bellscoin/releases/tag/2.0.0',
+				href: 'https://github.com/Nintondo/bellscoinV3',
 			},
 			{ text: 'ORDINALS WALLET', href: 'https://bells.ordinalswallet.com/' },
 			{ text: 'FX WALLET', href: 'https://www.fxwallet.com/' },
 			{
 				text: 'NINTONDO WALLET',
-				href: 'https://github.com/Nintondo/bellscoin/releases/tag/2.0.0',
+				href: 'https://nintondo.io',
 			},
 		],
 	},
