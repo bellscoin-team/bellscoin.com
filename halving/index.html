@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		      <title>Bellscoin Countdown</title>
+			      <link href="style.css" rel="stylesheet" type="text/css" />
+				    </head>
+					  <body>
+					      <div class="container">
+						        <img src="images/bel-logo.png" class="logo" />
+								      <h1 class="halving-countdown">Bellscoin Halving CountDown</h4>
+									        <div class="content">
+
+
+												          <h1>We are heading to <span style="color: #ff3753">Epoch 4</span></h1>
+
+														          <div class="launch-date" id="countdown">
+																            <div>
+																			            <p id="days" class="days">00</p>
+																						            <span>Days</span>
+																									          </div>
+
+																											            <div>
+																														            <p id="hours" class="hours">00</p>
+																																	            <span>Hours</span>
+																																				          </div>
+																																						            <div>
+																																									            <p id="minutes" class="minutes">00</p>
+																																												            <span>Minutes</span>
+																																															          </div>
+																																																	            <div>
+																																																				            <p id="seconds" class="seconds">00</p>
+																																																							            <span>Seconds</span>
+																																																										          </div>
+																																																												          </div>
+
+																																																														          <a href="https://bellscoin.com/" target="_blank">
+																																																																            <button type="button">
+																																																																			            <span>Explore Bellscoin</span>
+																																																																						            <img src="images/bellscoin.png" />
+																																																																									          </button>
+																																																																											          </a>
+																																																																													        </div>
+
+																																																																															      <img src="images/rocket.png" class="rocket" />
+																																																																																      </div>
+
+																																																																																	      <script>
+																																																																																		        const currentBlock = 161831;
+																																																																																				      const targetBlock = 259001;
+																																																																																					        const blockTime = 1 * 60 * 1000; // 1 minute in milliseconds
+
+																																																																																							      const currentTime = new Date("2024-08-30T14:05:57Z").getTime();
+																																																																																								        const remainingBlocks = targetBlock - currentBlock;
+																																																																																										      const targetTime = currentTime + remainingBlocks * blockTime;
+
+																																																																																											        function updateCountdown() {
+																																																																																													        const now = new Date().getTime();
+																																																																																															        const distance = targetTime - now;
+
+																																																																																																	        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+																																																																																																			        const hours = Math.floor(
+																																																																																																					          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+																																																																																																							          );
+																																																																																																									          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+																																																																																																											          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+																																																																																																													          document.getElementById("days").innerHTML = days;
+																																																																																																															          document.getElementById("hours").innerHTML = hours;
+																																																																																																																	          document.getElementById("minutes").innerHTML = minutes;
+																																																																																																																			          document.getElementById("seconds").innerHTML = seconds;
+
+																																																																																																																					          if (distance < 0) {
+																																																																																																																							            clearInterval(countdownInterval);
+																																																																																																																										          document.getElementById("countdown").innerHTML = "Countdown Finished";
+																																																																																																																												          }
+																																																																																																																														        }
+
+																																																																																																																																      const countdownInterval = setInterval(updateCountdown, 1000);
+																																																																																																																																	      </script>
+																																																																																																																																		    </body>
+																																																																																																																																			</html>
+

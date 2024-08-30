@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.launch-date {
+  display: flex;
+}
+
+.launch-date div {
+  flex-basis: 100px;
+}
+
+.launch-date div p {
+  font-size: 60px;
+  margin-bottom: -14px;
+}
+
+.rocket {
+  width: 250px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 5s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
+}
+
+.logo {
+  width: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.content {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.content p {
+  font-size: 3em; /* Bellscoin Epoch 4 Countdown 크기를 3배로 증가 */
+}
+
+.content h1 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #000; /* We are heading to 텍스트를 검은색으로 변경 */
+}
+
+.content button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #000; /* 버튼 배경을 검은색으로 설정 */
+  border: 2px solid;
+  outline: none;
+  padding: 12px 25px;
+  margin-top: 30px;
+  color: #fff;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  ); /* 무지개 색상 테두리 */
+
+  animation: rainbowBorder 5s linear infinite; /* 테두리 애니메이션 추가 */
+}
+
+.content button img {
+  width: 25px; /* 기존 15px에서 20px로 크기 조정 */
+  margin-left: 15px; /* 텍스트와 이미지 사이의 간격 조정 */
+}
+
+.content button span {
+  color: #fff; /* Explore Bellscoin 텍스트를 벨스코인 컬러로 설정 */
+  margin-right: 10px;
+  font-size: 1.5em; /* 텍스트 크기를 1.5배로 증가 */
+}
+
+.content button:hover span {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.days {
+  color: #ffd700; /* Gold */
+}
+
+.hours {
+  color: #ff6347; /* Tomato (a shade of red) */
+}
+
+.minutes {
+  color: #800080; /* Lime Green */
+}
+
+.seconds {
+  color: #1e90ff; /* Dodger Blue */
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.halving-countdown {
+  font-size: 4em; /* 텍스트 크기 조정 */
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #ff3753,
+    #ffd700,
+    #32cd32,
+    #1e90ff,
+    #ff3753
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorChange 5s linear infinite;
+}
+
+@keyframes rainbowBorder {
+  0% {
+    border-image-source: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      to left,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      to left,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red
+    );
+  }
+}
+
