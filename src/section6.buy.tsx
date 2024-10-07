@@ -7,30 +7,34 @@ import coinex from '~/assets/coinex.svg'
 import nkyc1x94Png from '~/assets/nkyc-1x-94.png'
 import nkyc2x188Png from '~/assets/nkyc-2x-188.png'
 import nkyc2x188Webp from '~/assets/nkyc-2x-188.webp'
-import pepeCex1x520Avif from '~/assets/pepe-cex-1x-520.avif'
-import pepeCex1x520Jpg from '~/assets/pepe-cex-1x-520.jpg'
-import pepeCex2x1040Avif from '~/assets/pepe-cex-2x-1040.avif'
-import pepeCex2x1040Jpg from '~/assets/pepe-cex-2x-1040.jpg'
-import pepeCex2x300Avif from '~/assets/pepe-cex-2x-300.avif'
-import pepeCex2x300Jpg from '~/assets/pepe-cex-2x-300.jpg'
-import pepeHappy1x520Avif from '~/assets/pepe-happy-1x-520.avif'
-import pepeHappy1x520Jpg from '~/assets/pepe-happy-1x-520.jpg'
-import pepeHappy2x1040Avif from '~/assets/pepe-happy-2x-1040.avif'
-import pepeHappy2x1040Jpg from '~/assets/pepe-happy-2x-1040.jpg'
-import pepeHappy2x300Avif from '~/assets/pepe-happy-2x-300.avif'
-import pepeHappy2x300Jpg from '~/assets/pepe-happy-2x-300.jpg'
-import pepeMining1x520Avif from '~/assets/pepe-mining-1x-520.avif'
-import pepeMining1x520Jpg from '~/assets/pepe-mining-1x-520.jpg'
-import pepeMining2x1040Avif from '~/assets/pepe-mining-2x-1040.avif'
-import pepeMining2x1040Jpg from '~/assets/pepe-mining-2x-1040.jpg'
-import pepeMining2x400Avif from '~/assets/pepe-mining-2x-400.avif'
-import pepeMining2x400Jpg from '~/assets/pepe-mining-2x-400.jpg'
-import pepeMoon1x520Avif from '~/assets/pepe-moon-1x-520.avif'
-import pepeMoon1x520Jpg from '~/assets/pepe-moon-1x-520.jpg'
-import pepeMoon2x1040Avif from '~/assets/pepe-moon-2x-1040.avif'
-import pepeMoon2x1040Jpg from '~/assets/pepe-moon-2x-1040.jpg'
-import pepeMoon2x400Avif from '~/assets/pepe-moon-2x-400.avif'
-import pepeMoon2x400Jpg from '~/assets/pepe-moon-2x-400.jpg'
+// import pepeCex1x520Avif from '~/assets/pepe-cex-1x-520.avif'
+// import pepeCex1x520Jpg from '~/assets/pepe-cex-1x-520.jpg'
+// import pepeCex2x1040Avif from '~/assets/pepe-cex-2x-1040.avif'
+// import pepeCex2x1040Jpg from '~/assets/pepe-cex-2x-1040.jpg'
+// import pepeCex2x300Avif from '~/assets/pepe-cex-2x-300.avif'
+// import pepeCex2x300Jpg from '~/assets/pepe-cex-2x-300.jpg'
+// import pepeHappy1x520Avif from '~/assets/pepe-happy-1x-520.avif'
+// import pepeHappy1x520Jpg from '~/assets/pepe-happy-1x-520.jpg'
+// import pepeHappy2x1040Avif from '~/assets/pepe-happy-2x-1040.avif'
+// import pepeHappy2x1040Jpg from '~/assets/pepe-happy-2x-1040.jpg'
+// import pepeHappy2x300Avif from '~/assets/pepe-happy-2x-300.avif'
+// import pepeHappy2x300Jpg from '~/assets/pepe-happy-2x-300.jpg'
+// import pepeMining1x520Avif from '~/assets/pepe-mining-1x-520.avif'
+// import pepeMining1x520Jpg from '~/assets/pepe-mining-1x-520.jpg'
+// import pepeMining2x1040Avif from '~/assets/pepe-mining-2x-1040.avif'
+// import pepeMining2x1040Jpg from '~/assets/pepe-mining-2x-1040.jpg'
+// import pepeMining2x400Avif from '~/assets/pepe-mining-2x-400.avif'
+// import pepeMining2x400Jpg from '~/assets/pepe-mining-2x-400.jpg'
+// import pepeMoon1x520Avif from '~/assets/pepe-moon-1x-520.avif'
+// import pepeMoon1x520Jpg from '~/assets/pepe-moon-1x-520.jpg'
+// import pepeMoon2x1040Avif from '~/assets/pepe-moon-2x-1040.avif'
+// import pepeMoon2x1040Jpg from '~/assets/pepe-moon-2x-1040.jpg'
+// import pepeMoon2x400Avif from '~/assets/pepe-moon-2x-400.avif'
+// import pepeMoon2x400Jpg from '~/assets/pepe-moon-2x-400.jpg'
+import lfg from '~/assets/section6/LFG520.gif'
+import exchanges from '~/assets/section6/exchanges520.gif'
+import minerReward from '~/assets/section6/minerReward520.gif'
+import mining from '~/assets/section6/mining520.gif'
 import trail1 from '~/assets/trail-1.svg'
 import trail2 from '~/assets/trail-2.svg'
 import xeggex1x215Png from '~/assets/xeggex-1x-215.png'
@@ -137,20 +141,20 @@ export default function Section6Buy() {
 							<picture>
 								<source
 									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${pepeMining2x1040Avif} 520w, ${pepeMining2x400Avif} 200w`}
+									srcSet={`${mining} 520w, ${mining} 200w`}
 									sizes="(min-width: 1300px) 520px, 200px"
 								/>
 								<source
 									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${pepeMining2x1040Jpg} 520w, ${pepeMining2x400Jpg} 200w`}
+									srcSet={`${mining} 520w, ${mining} 200w`}
 									sizes="(min-width: 1300px) 520px, 200px"
 								/>
-								<source srcSet={pepeMining1x520Avif} type="image/avif" />
+								<source srcSet={mining} type="image/avif" />
 								<img
 									ref={(instance) => {
 										instance && pepeObserver.observe(instance)
 									}}
-									src={pepeMining1x520Jpg}
+									src={mining}
 									alt="Pepe is mining"
 									width={200}
 									height={200}
@@ -234,20 +238,20 @@ export default function Section6Buy() {
 								<picture>
 									<source
 										media="(-webkit-min-device-pixel-ratio: 1.5)"
-										srcSet={`${pepeHappy2x1040Avif} 520w, ${pepeHappy2x300Avif} 150w`}
+										srcSet={`${minerReward} 520w, ${minerReward} 150w`}
 										sizes="(min-width: 1300px) 520px, 150px"
 									/>
 									<source
 										media="(-webkit-min-device-pixel-ratio: 1.5)"
-										srcSet={`${pepeHappy2x1040Jpg} 520w, ${pepeHappy2x300Jpg} 150w`}
+										srcSet={`${minerReward} 520w, ${minerReward} 150w`}
 										sizes="(min-width: 1300px) 520px, 150px"
 									/>
-									<source srcSet={pepeHappy1x520Avif} type="image/avif" />
+									<source srcSet={minerReward} type="image/avif" />
 									<img
 										ref={(instance) => {
 											instance && pepeObserver.observe(instance)
 										}}
-										src={pepeHappy1x520Jpg}
+										src={minerReward}
 										alt="Pepe is happy"
 										width={150}
 										height={150}
@@ -265,20 +269,20 @@ export default function Section6Buy() {
 								<picture>
 									<source
 										media="(-webkit-min-device-pixel-ratio: 1.5)"
-										srcSet={`${pepeCex2x1040Avif} 520w, ${pepeCex2x300Avif} 150w`}
+										srcSet={`${exchanges} 520w, ${exchanges} 150w`}
 										sizes="(min-width: 1300px) 520px, 150px"
 									/>
 									<source
 										media="(-webkit-min-device-pixel-ratio: 1.5)"
-										srcSet={`${pepeCex2x1040Jpg} 520w, ${pepeCex2x300Jpg} 150w`}
+										srcSet={`${exchanges} 520w, ${exchanges} 150w`}
 										sizes="(min-width: 1300px) 520px, 150px"
 									/>
-									<source srcSet={pepeCex1x520Avif} type="image/avif" />
+									<source srcSet={exchanges} type="image/avif" />
 									<img
 										ref={(instance) => {
 											instance && pepeObserver.observe(instance)
 										}}
-										src={pepeCex1x520Jpg}
+										src={exchanges}
 										alt="Pepe going to Cex"
 										width={150}
 										height={150}
@@ -376,20 +380,20 @@ export default function Section6Buy() {
 							<picture>
 								<source
 									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${pepeMoon2x1040Avif} 520w, ${pepeMoon2x400Avif} 200w`}
+									srcSet={`${lfg} 520w, ${lfg} 200w`}
 									sizes="(min-width: 1300px) 520px, 200px"
 								/>
 								<source
 									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${pepeMoon2x1040Jpg} 520w, ${pepeMoon2x400Jpg} 200w`}
+									srcSet={`${lfg} 520w, ${lfg} 200w`}
 									sizes="(min-width: 1300px) 520px, 200px"
 								/>
-								<source srcSet={pepeMoon1x520Avif} type="image/avif" />
+								<source srcSet={lfg} type="image/avif" />
 								<img
 									ref={(instance) => {
 										instance && pepeObserver.observe(instance)
 									}}
-									src={pepeMoon1x520Jpg}
+									src={lfg}
 									alt="Pepe, to the Moon!"
 									width={200}
 									height={200}

@@ -29,7 +29,7 @@ interface LinkGroup {
 const linkGroups: LinkGroup[] = [
 	{
 		icon: bellsGenesis7,
-		text: 'SCAN',
+		text: 'BELSCAN',
 		links: [
 			{ text: 'NINTONDO', href: 'https://nintondo.io/' },
 			{ text: 'BELLS QUARK', href: 'https://bells.quark.blue/tx/' },
@@ -37,7 +37,7 @@ const linkGroups: LinkGroup[] = [
 	},
 	{
 		icon: bellsGenesis37,
-		text: 'NODE WALLET',
+		text: 'NODE DOWNLOAD',
 		href: 'https://github.com/Nintondo/bellscoinV3',
 	},
 	{

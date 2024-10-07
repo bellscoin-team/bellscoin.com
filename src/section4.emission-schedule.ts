@@ -3,16 +3,20 @@ const END_DATE = new Date('2026-09-02') // for charting purpose
 
 const EPOCHS = [
 	{
-		days: 90,
-		emissionsInDay: 403200,
+		days: 40,
+		emissionsInDay: 203200,
 	},
 	{
-		days: 90,
-		emissionsInDay: 201600,
+		days: 110,
+		emissionsInDay: 180000,
 	},
 	{
-		days: 180,
-		emissionsInDay: 22896,
+		days: 70,
+		emissionsInDay: 180000,
+	},
+	{
+		days: 120,
+		emissionsInDay: 120000,
 	},
 	{
 		days: Number.MAX_SAFE_INTEGER,
