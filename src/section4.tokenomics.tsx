@@ -62,10 +62,21 @@ export default function Section4Tokenomics() {
 				}
 				return response.json() // JSON 형태로 응답을 파싱
 			})
-			.then((data:any) => {
-				const priceInUsd = data.data.price
-				setPrice(Number(priceInUsd.toString().slice(0, 10)))
-			})
+			.then(
+				(data: {
+					data: {
+						id: number
+						price: number
+						coin: string
+						currency: string
+						createdAt: Date
+						updatedAt: Date
+					}
+				}) => {
+					const priceInUsd = data.data.price
+					setPrice(Number(priceInUsd.toString().slice(0, 10)))
+				},
+			)
 			.catch(() => {
 				setPrice('not available')
 			})
@@ -454,6 +465,31 @@ export default function Section4Tokenomics() {
 				<h3 className="mx-auto w-min text-center font-chelsea text-[24px] leading-[1.2] text-[#834B16] lg:w-auto lg:text-[64px] lg:leading-[74px]">
 					Bellscoin emissions
 				</h3>
+				<div className="mx-auto mt-4 flex w-[620px] max-w-full flex-col gap-8 text-center font-chelsea text-[12px] lg:text-[16px] px-4">
+					<p className="text-[32px] text-[#E60012]">Key takeaways</p>
+					<p className="text-left tracking-305">
+						1. Unlike Bitcoin’s halving mechanism, BellsCoin has{' '}
+						<span className="text-[#E60012]">
+							a structure where the issuance decreases exponentially with each
+							passing epoch.
+						</span>
+					</p>
+					<p className="text-left tracking-305">
+						2. Since{' '}
+						<span className="text-[#E60012]">
+							BellsCoin’s block rewards are distributed randomly for each block
+						</span>
+						, it is not possible to predict the exact future circulating supply.
+					</p>
+					<p className="text-left tracking-305">
+						3. After the 5th Epoch, only about 2,880 $BEL will be generated
+						daily, and{' '}
+						<span className="text-[#E60012]">
+							only 1 million $BEL will be issued annually, resulting in a
+							structure where scarcity increases rapidly.
+						</span>
+					</p>
+				</div>
 				<Suspense
 					fallback={
 						<div className="mx-auto mt-[18px] w-[340px] lg:mt-[140px] lg:w-[1280px]">
