@@ -1,6 +1,7 @@
 import thumb1 from '~/assets/section7/thumb1.png'
 import thumb10 from '~/assets/section7/thumb10.png'
 import thumb11 from '~/assets/section7/thumb11.png'
+import thumb12 from '~/assets/section7/thumb12.png'
 import thumb2 from '~/assets/section7/thumb2.png'
 import thumb3 from '~/assets/section7/thumb3.png'
 import thumb4 from '~/assets/section7/thumb4.png'
@@ -42,20 +43,20 @@ function Card({ image, description, links, badgeText }: CardProps) {
 			ref={(instance) => {
 				instance && observer.observe(instance)
 			}}
-			className="relative flex w-full max-w-full scale-0 flex-col gap-4 rounded-2xl border border-solid border-[#387F33] bg-[#FFE46A] p-4 lg:flex-row"
+			className="relative flex w-full max-w-full scale-0 flex-col gap-4 rounded-2xl border border-solid border-[#387F33] bg-[#FFE46A] p-2 lg:flex-row"
 		>
 			{/* 왼쪽 상단에 빨간 딱지 */}
 			<div className="absolute left-[-10px] top-[-18px] rounded-lg bg-[#ED2C31] px-2 py-1 font-chelsea text-xs tracking-305 text-white">
 				{badgeText}
 			</div>
 
-			<img src={image} alt="icon" className="mb-4" />
+			<img src={image} alt="icon" />
 			<div className="flex flex-col justify-between font-chelsea text-xs uppercase tracking-[3px]">
 				<div>
-					<p>Description</p>
-					<div className="mt-2">{description}</div>
+					<p className="text-[14px] text-[#FF0000]">Description</p>
+					<div className="mt-2 leading-5">{description}</div>
 				</div>
-				<div className="mt-2 mt-20 space-y-1 lg:mt-0">
+				<div className="mt-4 space-y-1 lg:mt-0">
 					<p>Proofs & Links</p>
 					<div className="flex gap-2 text-[10px] text-[#0015FF] lg:flex-col lg:gap-0">
 						{links.map((link, index) => (
@@ -70,7 +71,9 @@ function Card({ image, description, links, badgeText }: CardProps) {
 									<span className="hidden lg:block">{link.text}</span>
 									<span className="block lg:hidden">Link{index + 1}</span>
 								</a>
-								<p>{index !== links.length - 1 && '|'}</p>
+								<p className="flex lg:hidden">
+									{index !== links.length - 1 && '|'}
+								</p>
 							</>
 						))}
 					</div>
@@ -93,7 +96,7 @@ export default function Section7Study() {
 						className="mx-auto mb-10 w-[60px] lg:w-full"
 					/>
 					<p className="w-[520px] font-chelsea text-[16px] tracking-[10px] text-[#FF0000] lg:text-[56px] lg:tracking-[20px]">
-						Study $Bel history
+						Study $BEL history
 					</p>
 					<img
 						src={title2}
@@ -132,7 +135,7 @@ export default function Section7Study() {
 								text: 'https://x.com/billym2k/status/1732424915528417602?s=46&t=xWOkrI8x7-FS82ub-1bdoA',
 							},
 						]}
-						badgeText="'13.11.28"
+						badgeText="'23.11.28"
 					/>
 
 					{/* 두 번째 카드 */}
@@ -158,7 +161,7 @@ export default function Section7Study() {
 								text: 'https://x.com/adamamcbride/status/1734970425778815413',
 							},
 						]}
-						badgeText="'13.12.14"
+						badgeText="'23.12.14"
 					/>
 					<Card
 						image={thumb3}
@@ -293,6 +296,36 @@ export default function Section7Study() {
 							},
 						]}
 						badgeText="'24.08.21"
+					/>
+					<Card
+						image={thumb12}
+						description={
+							<>
+								<p>
+									SuitBoy Billy, a collection of 10,000 PFP inscriptions created
+									by BellsCoin community member Dr. Beltoshi, is a project
+									designed to express gratitude to BillyM2K, the founder of
+									BellsCoin, by donating the proceeds from the inscription sales
+									to him.
+								</p>
+								<br />
+								<p>
+									Through the SuitBoy Billy collection, Billy received a
+									donation of 100,000 $BEL from Beltoshi. Thank you, BillyM2K!
+								</p>
+							</>
+						}
+						links={[
+							{
+								url: 'https://x.com/SuitboyBilly/status/1833596313147175178',
+								text: 'https://x.com/SuitboyBilly/status/1833596313147175178',
+							},
+							{
+								url: 'https://x.com/BillyM2k/status/1832961779011654112',
+								text: 'https://x.com/BillyM2k/status/1832961779011654112',
+							},
+						]}
+						badgeText="'24.09.11"
 					/>
 					<Card
 						image={thumb11}

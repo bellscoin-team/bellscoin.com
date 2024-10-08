@@ -118,3 +118,60 @@ export function Twitter({ className }: { className?: string }) {
 		</a>
 	)
 }
+
+export function MiningPoolStatus({ className }: { className?: string }) {
+	return (
+		<a
+			href="https://miningpoolstats.stream/bells"
+			target="_blank"
+			rel="noreferrer"
+			className="group"
+		>
+			<svg
+				viewBox="0 0 1200 1227"
+				fill="#E60012"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
+			>
+				<use href={`${sprite}#twitter`} />
+			</svg>
+		</a>
+	)
+}
+
+export function Coinmarketcap({ className }: { className?: string }) {
+	return (
+		<a
+			href="https://coinmarketcap.com/currencies/bellscoin/"
+			target="_blank"
+			rel="noreferrer"
+			className="group"
+		>
+			<svg
+				viewBox="0 0 1200 1227"
+				fill="#E60012"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
+			>
+				<use href={`${sprite}#twitter`} />
+			</svg>
+		</a>
+	)
+}
+
+export function Medium({ className }: { className?: string }) {
+	return (
+		<a
+			href="https://medium.com/@bellscoin"
+			target="_blank"
+			rel="noreferrer"
+			className="group"
+		>
+			<svg
+				viewBox="0 0 1200 1227"
+				fill="#E60012"
+				className={`group-hover:fill-white group-focus:fill-white ${className}`}
+			>
+				<use href={`${sprite}#twitter`} />
+			</svg>
+		</a>
+	)
+}

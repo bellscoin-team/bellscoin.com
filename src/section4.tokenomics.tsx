@@ -449,7 +449,7 @@ export default function Section4Tokenomics() {
 							Block 518,400
 						</h5>
 						<p className="mt-[24px] text-center text-[14px] tracking-305 text-[#ED2C31] lg:mt-[44px] lg:text-[24px]">
-							2&nbsp;&nbsp;<span className="text-[#F4BE04]">$Bel</span>
+							2&nbsp;&nbsp;<span className="text-[#F4BE04]">$BEL</span>
 							<br />
 							Per 1 Block
 						</p>
@@ -462,32 +462,27 @@ export default function Section4Tokenomics() {
 				</div>
 			</div>
 			<div className="mt-[98px] lg:mt-[308px] lg:block">
-				<h3 className="mx-auto w-min text-center font-chelsea text-[24px] leading-[1.2] text-[#834B16] lg:w-auto lg:text-[64px] lg:leading-[74px]">
+				<h3 className="mx-auto text-center font-chelsea text-[36px] leading-[1.2] text-[#834B16] lg:w-auto lg:text-[64px] lg:leading-[74px]">
 					Bellscoin emissions
 				</h3>
-				<div className="mx-auto mt-4 flex w-[620px] max-w-full flex-col gap-8 text-center font-chelsea text-[12px] lg:text-[16px] px-4">
-					<p className="text-[32px] text-[#E60012]">Key takeaways</p>
+				<div className="mx-auto mt-4 flex w-[500px] max-w-full flex-col gap-8 px-4 text-center font-chelsea text-[12px] lg:text-[16px]">
+					<p className="text-[20px] text-[#E60012] lg:text-[32px]">
+						Key takeaways
+					</p>
 					<p className="text-left tracking-305">
-						1. Unlike Bitcoin’s halving mechanism, BellsCoin has{' '}
+						Unlike Bitcoin’s halving mechanism, BellsCoin has{' '}
 						<span className="text-[#E60012]">
 							a structure where the issuance decreases exponentially with each
 							passing epoch.
 						</span>
 					</p>
 					<p className="text-left tracking-305">
-						2. Since{' '}
+						2After the 5th Epoch, only about 2,880 $BEL will be generated daily,
+						and{' '}
 						<span className="text-[#E60012]">
-							BellsCoin’s block rewards are distributed randomly for each block
+							only 1 million $BEL will be issued annually
 						</span>
-						, it is not possible to predict the exact future circulating supply.
-					</p>
-					<p className="text-left tracking-305">
-						3. After the 5th Epoch, only about 2,880 $BEL will be generated
-						daily, and{' '}
-						<span className="text-[#E60012]">
-							only 1 million $BEL will be issued annually, resulting in a
-							structure where scarcity increases rapidly.
-						</span>
+						, resulting in a structure where scarcity increases rapidly.
 					</p>
 				</div>
 				<Suspense
