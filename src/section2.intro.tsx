@@ -1,9 +1,10 @@
 import mainBackground from '~/assets/main-background.svg'
+import welcomeBellscoin from '~/assets/section2/welcomeBellscoin.png'
 import sprite from '~/assets/sprite.svg'
-import welcomeBoard1x859Png from '~/assets/welcome-board-1x-859.png'
-import welcomeBoard1x859Webp from '~/assets/welcome-board-1x-859.webp'
-import welcomeBoard2x1718Png from '~/assets/welcome-board-2x-1718.png'
-import welcomeBoard2x1718Webp from '~/assets/welcome-board-2x-1718.webp'
+// import welcomeBoard1x859Png from '~/assets/welcome-board-1x-859.png'
+// import welcomeBoard1x859Webp from '~/assets/welcome-board-1x-859.webp'
+// import welcomeBoard2x1718Png from '~/assets/welcome-board-2x-1718.png'
+// import welcomeBoard2x1718Webp from '~/assets/welcome-board-2x-1718.webp'
 import { BellBag } from '~/component/BellBag.tsx'
 import { typewriter } from '~/util/typewriter.ts'
 
@@ -63,17 +64,8 @@ export default function Section2Intro() {
 				<div className="absolute left-0 top-0 h-full w-full bg-[rgba(0,194,137,0.4)] lg:invisible" />
 				<div className="relative">
 					<picture>
-						<source
-							media="(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1300px)"
-							srcSet={`${welcomeBoard2x1718Webp} 540w`}
-						/>
-						<source
-							media="(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1300px)"
-							srcSet={`${welcomeBoard2x1718Png} 540w`}
-						/>
-						<source srcSet={`${welcomeBoard1x859Webp} 540w`} />
 						<img
-							src={welcomeBoard1x859Png}
+							src={welcomeBellscoin}
 							alt="Welcome to Bellscoin"
 							width={540}
 							height={543}
@@ -81,7 +73,7 @@ export default function Section2Intro() {
 						/>
 					</picture>
 					<h1 className="-ml-[4px] text-[20px] leading-[1.8] tracking-305 text-white lg:text-[56px]">
-						Bells ($Bel) coin
+						Bellscoin ($Bel) 
 					</h1>
 					<div className="relative text-[14px] leading-[1.2] tracking-305 text-white lg:pr-[80px] lg:text-[30px]">
 						<p
