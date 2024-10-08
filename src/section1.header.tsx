@@ -5,13 +5,18 @@ import bellsGenesis53 from '~/assets/Bells Genesis-53.png'
 import bellsGenesis62 from '~/assets/Bells Genesis-62.png'
 import bellsGenesis63 from '~/assets/Bells Genesis-63.png'
 import bellsGenesis7 from '~/assets/Bells Genesis-7.png'
+import bellsGenesis1 from '~/assets/bellsGenesis1.png'
+import bellsGenesis2 from '~/assets/bellsGenesis2.png'
 import { useViewportSize } from '~/util/use-viewport-size.ts'
 
 import {
 	CoinGecko,
+	Coinmarketcap,
 	Discord,
 	Github,
 	Linktree,
+	Medium,
+	MiningPoolStatus,
 	Telegram,
 	Twitter,
 } from './component/ContactIcon.tsx'
@@ -29,7 +34,7 @@ interface LinkGroup {
 const linkGroups: LinkGroup[] = [
 	{
 		icon: bellsGenesis7,
-		text: 'BELSCAN',
+		text: 'EXPLORER',
 		links: [
 			{ text: 'NINTONDO', href: 'https://nintondo.io/' },
 			{ text: 'BELLS QUARK', href: 'https://bells.quark.blue/tx/' },
@@ -49,7 +54,6 @@ const linkGroups: LinkGroup[] = [
 				href: 'https://github.com/Nintondo/bellscoinV3',
 			},
 			{ text: 'ORDINALS WALLET', href: 'https://bells.ordinalswallet.com/' },
-			{ text: 'FX WALLET', href: 'https://www.fxwallet.com/' },
 			{
 				text: 'NINTONDO WALLET',
 				href: 'https://nintondo.io',
@@ -71,12 +75,48 @@ const linkGroups: LinkGroup[] = [
 	},
 	{
 		icon: bellsGenesis53,
-		text: 'ORDINALS',
+		text: 'BELLINALS',
 		links: [
-			{ text: 'BELLSCRIBE', href: 'https://bellscribe.com/' },
-			{ text: 'BELLINALS INDEXER', href: 'https://bellinals.nintondo.io/' },
-			{ text: 'BELINALS', href: 'https://bell.drc20.fun/' },
-			{ text: 'BEL-20 INDEXER', href: 'https://bells-indexer.netlify.app/' },
+			{
+				text: 'NINTONDO BELLINALS EXPLORER',
+				href: 'https://nintondo.io/belinals',
+			},
+			{ text: 'TOP COLLECTIONS', href: 'https://nintondo.io/market' },
+			{
+				text: 'COLLECTIONS SHOWROOM',
+				href: 'https://collection.bellscoin.com',
+			},
+		],
+	},
+	{
+		icon: bellsGenesis1,
+		text: 'DONATION',
+		href: 'https://donation.bellscoin.com',
+	},
+]
+
+const linkGroupsSub: LinkGroup[] = [
+	{
+		icon: bellsGenesis2,
+		text: 'COMMUNITY PRODUCT',
+		links: [
+			{ text: 'Belldow', href: 'https://bellscoin.meme/' },
+			{ text: 'Bellswall', href: 'https://www.bellswall.com/' },
+			{ text: 'Bell sight', href: 'https://bellsight.xyz/wallet' },
+			{ text: 'Bellscoin halving', href: 'https://halving.bellscoin.meme/' },
+			{
+				text: 'Bellscoin calculator',
+				href: 'https://calculator.bellscoin.meme',
+			},
+			{
+				text: 'Bellscoin rich list',
+				href: 'https://bellscoin-rich-list.vercel.app/',
+			},
+			{ text: 'Bellspool', href: 'https://bellspool.io' },
+			{ text: 'Bell indexer', href: 'https://bells-indexer.netlify.app/' },
+			{ text: 'Bellscribe', href: 'https://bellscribe.com/' },
+			{ text: 'Bellinals', href: 'https://bell.drc20.fun/' },
+			{ text: 'Bells wtf', href: 'http://bells.wtf/' },
 		],
 	},
 ]
@@ -138,12 +178,12 @@ export default function Section1Header() {
 							/>
 						</svg>
 					</button>
-					{linkGroups.map((linkGroup) => (
+					{[...linkGroups, ...linkGroupsSub].map((linkGroup) => (
 						<div
 							key={linkGroup.text}
 							className="group grid grid-cols-[60px_1fr] items-center"
 						>
-							<img src={linkGroup.icon} alt="" width={60} height={60} />
+							<img src={linkGroup.icon} alt="" width={44} height={44} />
 							{linkGroup.href ? (
 								<a
 									href={linkGroup.href}
@@ -193,7 +233,7 @@ export default function Section1Header() {
 					<div className="w-[12px]" />
 					<div className="w-[18px]" />
 				</button>
-				<nav className="invisible relative z-[2] mx-auto flex h-full max-w-[2560px] items-center justify-end space-x-[40px] pr-[90px] text-center font-mogra text-[24px] leading-[1.2] tracking-305 text-white lg:visible">
+				<nav className="invisible relative z-[2] mx-auto flex h-full max-w-[2560px] items-center justify-end space-x-[40px] pr-[90px] text-center font-mogra leading-[1.2] tracking-305 text-white lg:visible">
 					{linkGroups.map((linkGroup) => (
 						<div
 							key={linkGroup.text}
@@ -215,11 +255,11 @@ export default function Section1Header() {
 								<span className="inline-block w-min">{linkGroup.text}</span>
 							)}
 							{linkGroup.links ? (
-								<ul className="invisible absolute z-[1] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[24px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
+								<ul className="invisible absolute z-[1] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[16px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
 									{linkGroup.links.map((link) => (
 										<li
 											key={link.text}
-											className="text-white focus-within:text-[#08835E] hover:text-[#08835E]"
+											className="text-[#525252] focus-within:text-[#08835E] hover:text-[#08835E]"
 										>
 											<a
 												href={link.href}
@@ -239,12 +279,56 @@ export default function Section1Header() {
 			</div>
 			<div className="h-[43px] bg-[#FFE46A] lg:h-[96px]">
 				<nav className="invisible relative z-[1] mx-auto flex h-full max-w-[2560px] items-center justify-end gap-x-[40px] pr-[90px] text-[#FFE46A] lg:visible">
-					<Github className="w-[50px]" />
-					<Twitter className="h-[44px]" />
-					<Telegram className="w-[50px]" />
-					<Discord className="w-[50px]" />
-					<CoinGecko className="w-[50px]" />
-					<Linktree className="h-[48px]" />
+					{linkGroupsSub.map((linkGroup) => (
+						<div
+							key={linkGroup.text}
+							className="group relative font-mogra leading-[1.2] tracking-305 text-[#E60012] group-hover:fill-white group-focus:fill-white lg:visible"
+							tabIndex={linkGroup.href ? undefined : 0}
+						>
+							{linkGroup.href ? (
+								<a
+									href={linkGroup.href}
+									{...(!linkGroup.href.startsWith('#') && {
+										target: '_blank',
+										rel: 'noreferrer',
+									})}
+									className="inline-block w-min"
+								>
+									{linkGroup.text}
+								</a>
+							) : (
+								<span className="inline-block w-min">{linkGroup.text}</span>
+							)}
+							{linkGroup.links ? (
+								<ul className="invisible absolute z-[1] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[16px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
+									{linkGroup.links.map((link) => (
+										<li
+											key={link.text}
+											className="text-[#525252] focus-within:text-[#08835E] hover:text-[#08835E]"
+										>
+											<a
+												href={link.href}
+												target="_blank"
+												rel="noreferrer"
+												className="block"
+											>
+												{link.text}
+											</a>
+										</li>
+									))}
+								</ul>
+							) : null}
+						</div>
+					))}
+					<Github className="w-[40px]" />
+					<Twitter className="h-[38px]" />
+					<Telegram className="w-[40px]" />
+					<Discord className="w-[40px]" />
+					<CoinGecko className="w-[40px]" />
+					<Linktree className="h-[38px]" />
+					<MiningPoolStatus className="h-[40px]" />
+					<Coinmarketcap className="h-[40px]" />
+					<Medium className="h-[40px]" />
 				</nav>
 			</div>
 		</header>

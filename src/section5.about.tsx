@@ -145,14 +145,14 @@ export default function Section5About() {
 				<h2 className="text-center font-senior text-[26px] leading-[1.25] text-[#056242] lg:text-[56px]">
 					About
 					<br />
-					Bells coin
+					Bellscoin
 				</h2>
 			</div>
 			<article className="relative mx-auto mt-[60px] w-[320px] font-senior text-[18px] leading-[30px] text-[#08835E] lg:mt-[200px] lg:w-[1080px] lg:text-[34px] lg:leading-[60px]">
 				<h3 className="text[24px] text-center font-senior leading-[1] text-[#691823] lg:text-left lg:text-[60px]">
 					Roadmap
 				</h3>
-				<ol className="mt-[40px] list-decimal pl-[40px] lg:mt-[80px] lg:pl-[140px]">
+				<ol className="mt-[40px] list-decimal pl-[40px] lg:mt-[80px] lg:pl-[140px] text-[12px] lg:text-[32px]">
 					<li>
 						Restore the forgotten
 						<br />
@@ -165,20 +165,18 @@ export default function Section5About() {
 						in the world.
 					</li>
 					<li>
-						Buy and <span className="text-[#ED2C31]">HODL</span>.
+						Buy and <span className="text-[#ED2C31]">HODL $BEL</span>.
 					</li>
 					<li>
 						Buy more if you like
 						<br />
-						Bells.
+						Bellscoin.
 					</li>
 					<li>
 						Maybe we make some <br />
-						<span className="text-[#ED2C31]">interesting things</span> like
+						<span className="text-[#ED2C31]">interesting things</span> like <span className="text-[#ED2C31]">Op_cat</span>
 						<br />
-						bellscription etc., but we
-						<br />
-						are not sure.
+						on Bellscoin layer1, but we are not sure.
 					</li>
 				</ol>
 			</article>
