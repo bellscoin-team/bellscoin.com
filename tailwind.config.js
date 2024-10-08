@@ -30,6 +30,17 @@ export default {
 					'75%': { transform: 'translateX(5px)' },
 					'100%': { transform: 'translateX(0)' },
 				},
+                'shaking': {
+					'0%': { transform: 'translateX(0) rotate(0)' },
+					'15%': { transform: 'translateX(0) rotate(0)' },
+					'25%': { transform: 'rotate(0)' },
+					'35%': { transform: 'rotate(17deg)' },
+					'55%': { transform: 'rotate(-17deg)' },
+					'65%': { transform: 'rotate(17deg)' },
+					'75%': { transform: 'rotate(-17deg)' },
+					'85%': { transform: 'rotate(0)' },
+					'100%': { transform: 'rotate(0)' },
+				},
 				'jump-shaking': {
 					'0%': { transform: 'translateX(0) rotate(0)' },
 					'15%': { transform: 'translateX(0) rotate(0)' },

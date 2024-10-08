@@ -111,28 +111,47 @@ export default function Section2Intro() {
 			</div>
 			<div className="relative flex flex-col items-center px-[40px] pb-[84px] pt-[20px] lg:mx-auto lg:mt-[80px] lg:w-[1080px] lg:flex-row lg:pb-0 lg:pt-0">
 				<div className="absolute left-0 top-0 -z-[1] h-full w-full bg-[rgba(0,194,137,0.4)] lg:invisible" />
-				<div className="flex flex-col gap-4 w-[400px] lg:w-[600px] flex-shrink-0 text-[12px] leading-[1.2] tracking-305 lg:text-[24px]">
-					<p className="">
+				<div className="flex w-[400px] max-w-full  flex-shrink-0 flex-col gap-4 text-[12px] leading-[1.2] tracking-305 lg:w-[600px] lg:text-[24px]">
+					<p className="relative">
+						<BellBag className="absolute -left-[32px] top-0 w-[24px] animate-[shaking_1s_infinite] lg:-left-14 lg:w-[48px]" />
 						created by Dogecoin dev, BillyM2K Original Memecoin born in 2013
 					</p>
-					<p className="text-[#ED2C31]">
+					<p className="relative text-[#ED2C31]">
+						<BellBag className="absolute -left-[30px] top-0 w-[24px] animate-[shaking_1s_infinite] lg:-left-[60px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[34px] top-0 w-[24px] animate-[shaking_1s_infinite] lg:-left-[52px] lg:w-[48px]" />
 						NO VC & KOL
 						<br />
 						No pre-mined
 						<br />
 						NO team allocation
 					</p>
-					<p>Fully decentralized community driven</p>
-					<p>Proof of work (Scrypt Algorithm)</p>
-					<p>
+					<p className="relative">
+						<BellBag className="absolute -left-[28px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[64px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[32px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[56px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[36px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[48px] lg:w-[48px]" />
+						Fully decentralized community driven
+					</p>
+					<p className="relative">
+						<BellBag className="absolute -left-[26px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[68px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[30px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[60px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[34px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[52px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[38px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[44px] lg:w-[48px]" />
+						Proof of work (Scrypt Algorithm)
+					</p>
+					<p className="relative">
+						<BellBag className="absolute -left-[24px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[72px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[28px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[64px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[32px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[56px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[36px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[48px] lg:w-[48px]" />
+						<BellBag className="absolute -left-[40px] -top-2 w-[24px] animate-[shaking_1s_infinite] lg:-left-[40px] lg:w-[48px]" />
 						Merge mined with $LTC, $DOGE{' '}
-						<span className='text-[10px] lg:text-[16px]'>
+						<span className="text-[10px] lg:text-[16px]">
 							Network hashrate comparable to $LTC and $DOGE (1.2 PH/s)
 						</span>
 					</p>
 				</div>
-				<div className="relative -left-[4px] mt-[32px] flex lg:absolute lg:-right-[100px] lg:left-auto lg:mt-0">
-					<div className="absolute left-[100px] top-[112px] animate-[jump-shaking_1s_infinite] lg:left-[140px] lg:top-[196px]">
+				<div className="relative -left-[4px] mt-[32px] flex lg:absolute lg:-right-[100px] lg:left-auto lg:-mt-[200px]">
+					<div className="absolute left-[100px] top-[130px] animate-[jump-shaking_1s_infinite] lg:left-[140px] lg:top-[260px]">
 						{/* <BellBag
 							width={89}
 							height={113}
