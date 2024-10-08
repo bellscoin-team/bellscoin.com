@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 
-import cowWithBell from '~/assets/cowWithBell.png'
-import dog from '~/assets/dog.png'
 import dogeCoin1x88Png from '~/assets/doge-coin-1x-88.png'
+import leaf from '~/assets/leaf.svg'
+// import cowWithBell from '~/assets/section3/cowWithBell.png'
+import dog from '~/assets/section3/dog.png'
+import powernook from '~/assets/section3/powernook.png'
 // import dogeCoin1x88Webp from '~/assets/doge-coin-1x-88.webp'
 // import dogeCoin2x196Png from '~/assets/doge-coin-2x-196.png'
 // import dogeCoin2x196Webp from '~/assets/doge-coin-2x-196.webp'
@@ -12,7 +14,6 @@ import dogeCoin1x88Png from '~/assets/doge-coin-1x-88.png'
 // import dogeTesla2x360Webp from '~/assets/doge-tesla-2x-360.webp'
 // import dogeTesla2x800Png from '~/assets/doge-tesla-2x-800.png'
 // import dogeTesla2x800Webp from '~/assets/doge-tesla-2x-800.webp'
-import leaf from '~/assets/leaf.svg'
 import sprite from '~/assets/sprite.svg'
 // import { BellBag } from '~/component/BellBag.tsx'
 import { useViewportSize } from '~/util/use-viewport-size.ts'
@@ -77,7 +78,7 @@ export default function Section3History() {
 							<div className="animate-[jump-shaking_1s_infinite]">
 								<picture>
 									<img
-										src={cowWithBell}
+										src={powernook}
 										alt="DOGE"
 										width={200}
 										height={200}
@@ -91,17 +92,17 @@ export default function Section3History() {
 								/> */}
 							</div>
 						</div>
-						<div className="mt-[40px] flex flex-shrink-0 animate-[jump-shaking-2_.5s_linear_infinite] lg:ml-[400px] lg:mt-[5px]">
+						<div className="mt-[40px] mb-[40px] flex flex-shrink-0 animate-[jump-shaking-2_.5s_linear_infinite] ml-[40px] lg:ml-[400px] lg:mt-[5px]">
 							<picture>
 								<img
 									src={dog}
 									alt="doge on tesla"
-									width={90}
-									height={90}
+									width={80}
+									height={80}
 									className="lg:w-[200px]"
 								/>
 							</picture>
-							<div className="absolute -translate-y-[100px] translate-x-[100px] lg:translate-x-[220px] lg:translate-y-[0px]">
+							<div className="absolute -translate-y-[100px] translate-x-[60px] lg:translate-x-[220px] lg:translate-y-[0px]">
 								<div className="relative lg:ml-[112px]">
 									<svg
 										width={69}
