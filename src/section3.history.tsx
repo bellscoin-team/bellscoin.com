@@ -1,18 +1,20 @@
 import { useEffect, useRef, useState } from 'react'
 
+import cowWithBell from '~/assets/cowWithBell.png'
+import dog from '~/assets/dog.png'
 import dogeCoin1x88Png from '~/assets/doge-coin-1x-88.png'
-import dogeCoin1x88Webp from '~/assets/doge-coin-1x-88.webp'
-import dogeCoin2x196Png from '~/assets/doge-coin-2x-196.png'
-import dogeCoin2x196Webp from '~/assets/doge-coin-2x-196.webp'
-import dogeTesla1x400Png from '~/assets/doge-tesla-1x-400.png'
-import dogeTesla1x400Webp from '~/assets/doge-tesla-1x-400.webp'
-import dogeTesla2x360Png from '~/assets/doge-tesla-2x-360.png'
-import dogeTesla2x360Webp from '~/assets/doge-tesla-2x-360.webp'
-import dogeTesla2x800Png from '~/assets/doge-tesla-2x-800.png'
-import dogeTesla2x800Webp from '~/assets/doge-tesla-2x-800.webp'
+// import dogeCoin1x88Webp from '~/assets/doge-coin-1x-88.webp'
+// import dogeCoin2x196Png from '~/assets/doge-coin-2x-196.png'
+// import dogeCoin2x196Webp from '~/assets/doge-coin-2x-196.webp'
+// import dogeTesla1x400Png from '~/assets/doge-tesla-1x-400.png'
+// import dogeTesla1x400Webp from '~/assets/doge-tesla-1x-400.webp'
+// import dogeTesla2x360Png from '~/assets/doge-tesla-2x-360.png'
+// import dogeTesla2x360Webp from '~/assets/doge-tesla-2x-360.webp'
+// import dogeTesla2x800Png from '~/assets/doge-tesla-2x-800.png'
+// import dogeTesla2x800Webp from '~/assets/doge-tesla-2x-800.webp'
 import leaf from '~/assets/leaf.svg'
 import sprite from '~/assets/sprite.svg'
-import { BellBag } from '~/component/BellBag.tsx'
+// import { BellBag } from '~/component/BellBag.tsx'
 import { useViewportSize } from '~/util/use-viewport-size.ts'
 
 export default function Section3History() {
@@ -22,7 +24,7 @@ export default function Section3History() {
 				<BackgroundLeaves />
 				<div className="relative mx-auto flex flex-col lg:w-[1080px]">
 					<p className="mx-auto w-[270px] font-chelsea text-[18px] uppercase leading-[22px] tracking-305 text-[#F4BE04] lg:ml-[455px] lg:w-auto lg:text-[34px] lg:leading-[50px]">
-						Bells ($Bel) was
+						Bellscoin ($BEL) was
 						<br />
 						developed by
 						<br />
@@ -35,16 +37,6 @@ export default function Section3History() {
 								DOGE coin
 							</span>
 							<picture>
-								<source
-									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${dogeCoin2x196Webp} 88w, ${dogeCoin1x88Webp} 45w`}
-									sizes="(min-width: 1300px) 88px, 45px"
-								/>
-								<source
-									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${dogeCoin2x196Png} 88w, ${dogeCoin1x88Png} 45w`}
-									sizes="(min-width: 1300px) 88px, 45px"
-								/>
 								<img
 									src={dogeCoin1x88Png}
 									alt="DOGE"
@@ -67,7 +59,7 @@ export default function Section3History() {
 								>
 									<use href={`${sprite}#speechBubble`} />
 								</svg>
-								<span className="absolute top-[14px] w-full text-center font-mogra text-[12px] uppercase leading-[12px] tracking-305 lg:top-[22px] lg:text-[24px] lg:leading-[26px]">
+								<span className="absolute top-[14px] w-full text-center font-mogra text-[12px] uppercase leading-[12px] tracking-305 lg:top-[22px] lg:text-[24px] lg:leading-[26px] lg:-ml-[60px]">
 									I came into
 									<br />
 									the world
@@ -83,35 +75,33 @@ export default function Section3History() {
 							<div className="ml-[14px] mt-[4px] h-[13px] w-[13px] rounded-full bg-[#F8D703] drop-shadow-bubble lg:ml-0 lg:mt-[15px] lg:h-[32px] lg:w-[32px]" />
 							<div className="ml-[21px] mt-[4px] h-[9px] w-[9px] rounded-full bg-[#F8D703] drop-shadow-bubble lg:ml-[42px] lg:mt-[12px] lg:h-[22px] lg:w-[22px]" />
 							<div className="animate-[jump-shaking_1s_infinite]">
-								<BellBag
+								<picture>
+									<img
+										src={cowWithBell}
+										alt="DOGE"
+										width={200}
+										height={200}
+										className="lg:w-[400px] "
+									/>
+								</picture>
+								{/* <BellBag
 									width={76}
 									height={95}
 									className="ml-[25px] -scale-x-100 lg:-mt-[10px] lg:ml-[42px] lg:w-[191px]"
-								/>
+								/> */}
 							</div>
 						</div>
-						<div className="mt-[40px] flex flex-shrink-0 animate-[jump-shaking-2_.5s_linear_infinite] lg:ml-[22px] lg:mt-[5px]">
+						<div className="mt-[40px] flex flex-shrink-0 animate-[jump-shaking-2_.5s_linear_infinite] lg:ml-[400px] lg:mt-[5px]">
 							<picture>
-								<source
-									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${dogeTesla2x800Webp} 400w, ${dogeTesla2x360Webp} 180w`}
-									sizes="(min-width: 1300px) 400px, 180px"
-								/>
-								<source
-									media="(-webkit-min-device-pixel-ratio: 1.5)"
-									srcSet={`${dogeTesla2x800Png} 400w, ${dogeTesla2x360Png} 180w`}
-									sizes="(min-width: 1300px) 400px, 180px"
-								/>
-								<source srcSet={`${dogeTesla1x400Webp} 400w`} />
 								<img
-									src={dogeTesla1x400Png}
+									src={dog}
 									alt="doge on tesla"
-									width={180}
-									height={180}
-									className="lg:w-[400px]"
+									width={90}
+									height={90}
+									className="lg:w-[200px]"
 								/>
 							</picture>
-							<div className="absolute -translate-y-[100px] translate-x-[100px] lg:translate-x-[420px] lg:translate-y-[20px]">
+							<div className="absolute -translate-y-[100px] translate-x-[100px] lg:translate-x-[220px] lg:translate-y-[0px]">
 								<div className="relative lg:ml-[112px]">
 									<svg
 										width={69}

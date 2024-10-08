@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
-import bellsGenesis31 from '~/assets/Bells Genesis-31.png'
-import bellsGenesis35 from '~/assets/Bells Genesis-35.png'
-import bellsGenesis6 from '~/assets/Bells Genesis-6.png'
+// import bellsGenesis31 from '~/assets/Bells Genesis-31.png'
+// import bellsGenesis35 from '~/assets/Bells Genesis-35.png'
+// import bellsGenesis6 from '~/assets/Bells Genesis-6.png'
 import coinex from '~/assets/coinex.svg'
 import nkyc1x94Png from '~/assets/nkyc-1x-94.png'
 import nkyc2x188Png from '~/assets/nkyc-2x-188.png'
@@ -44,14 +44,14 @@ import { SequenceArrows } from '~/component/SequenceArrows.tsx'
 import { typewriter } from '~/util/typewriter.ts'
 import { useViewportSize } from '~/util/use-viewport-size.ts'
 
-import {
-	CoinGecko,
-	Discord,
-	Github,
-	Linktree,
-	Telegram,
-	Twitter,
-} from './component/ContactIcon.tsx'
+// import {
+// 	CoinGecko,
+// 	Discord,
+// 	Github,
+// 	Linktree,
+// 	Telegram,
+// 	Twitter,
+// } from './component/ContactIcon.tsx'
 
 const pepeObserver = new IntersectionObserver(
 	(entries) => {
@@ -87,7 +87,7 @@ const typingObserver = new IntersectionObserver((entries) => {
 					'IF YOU LIKE ',
 					{
 						tagName: 'span',
-						text: '$BELLS',
+						text: '$BEL',
 						className: 'text-[#ED2C31]',
 					},
 				],
@@ -165,7 +165,7 @@ export default function Section6Buy() {
 							<p className="overflow-hidden break-words">
 								Download <span className="text-[#ED2C31]">Qt wallet</span>
 								<br />
-								and mine <span className="text-[#ED2C31]">$Bel</span> by
+								and mine <span className="text-[#ED2C31]">$BEL</span> by
 								<br />
 								yourself.
 								<br />
@@ -293,7 +293,7 @@ export default function Section6Buy() {
 								<p className="mt-[6px] text-center lg:mt-[24px]">
 									You can also buy
 									<br />
-									some <span className="text-[#ED2C31]">$Bel</span> on CEX
+									some <span className="text-[#ED2C31]">$BEL</span> on CEX
 								</p>
 							</div>
 						</div>
@@ -501,19 +501,19 @@ export default function Section6Buy() {
 							DISCORD
 						</a>
 						<br />
-						IF YOU LIKE <span className="text-[#ED2C31]">$BELLS</span>
+						IF YOU LIKE <span className="text-[#ED2C31]">$BEL</span>
 					</p>
 				</div>
 			</div>
-			<div className="mx-auto mt-[122px] grid w-[340px] grid-cols-[38px_1fr] items-center gap-x-[4px] text-[#505050] *:font-senior *:tracking-[0.015em] lg:mt-[166px] lg:w-[1080px] lg:grid-cols-[108px_1fr] [&>img]:place-self-center [&_h3]:pt-[12px] [&_h3]:text-[18px] lg:[&_h3]:text-[34px]">
+			{/* <div className="mx-auto mt-[122px] grid w-[340px] grid-cols-[38px_1fr] items-center gap-x-[4px] text-[#505050] *:font-senior *:tracking-[0.015em] lg:mt-[166px] lg:w-[1080px] lg:grid-cols-[108px_1fr] [&>img]:place-self-center [&_h3]:pt-[12px] [&_h3]:text-[18px] lg:[&_h3]:text-[34px]">
 				<img src={bellsGenesis31} alt="" width={90} height={90} />
 				<h3 className="text-[#ED2C31]">Disclaimer</h3>
 				<p className="col-start-2 mb-[32px] mt-[10px] text-[10px] leading-[14px] lg:mb-[40px] lg:text-[20px] lg:leading-[34px]">
-					<span className="text-[#ED2C31]">$Bells</span> coin has no association
+					<span className="text-[#ED2C31]">$BEL</span> coin has no association
 					with{' '}
 					<span className="text-[#ED2C31]">“Animal Crossing” of Nintendo</span>
 					. This coin is simply paying homage to a meme we all love and
-					recognize. $Bells is a meme coin with no intrinsic value or
+					recognize. $BEL is a meme coin with no intrinsic value or
 					expectation of financial return. There is no formal team or roadmap.
 					<br />
 					The coin is completely useless and for entertainment purposes only.
@@ -521,13 +521,13 @@ export default function Section6Buy() {
 				<img src={bellsGenesis6} alt="" width={90} height={90} />
 				<h3 className="text-[#08835E]">Donation</h3>
 				<p className="col-start-2 mb-[32px] mt-[10px] text-[10px] leading-[14px] lg:mb-[40px] lg:text-[20px] lg:leading-[34px]">
-					Bells coin is not pre-mined and is fully decentralized. The only
-					individuals who have enjoyed the benefits of Bells coin are early
+					Bellscoin is not pre-mined and is fully decentralized. The only
+					individuals who have enjoyed the benefits of Bellscoin are early
 					miners. We are in need, so please consider donating to help us
 					maintain this website.
 					<br />
 					<br />
-					<span className="text-[#08835E]">Our $bells address :</span>
+					<span className="text-[#08835E]">Our $BEL address :</span>
 					<br />
 					<span className="break-all text-[#7D5252]">
 						BEGJMVqLYRJkGwvwmsZDDjERpzxGqdyzXT
@@ -543,7 +543,7 @@ export default function Section6Buy() {
 					<CoinGecko className="w-[20px] lg:w-[44px]" />
 					<Linktree className="h-[20px] lg:h-[42px]" />
 				</div>
-			</div>
+			</div> */}
 		</section>
 	)
 }

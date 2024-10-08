@@ -1,9 +1,10 @@
 import mainBackground from '~/assets/main-background.svg'
+import welcomeBellscoin from '~/assets/section2/welcomeBellscoin.png'
 import sprite from '~/assets/sprite.svg'
-import welcomeBoard1x859Png from '~/assets/welcome-board-1x-859.png'
-import welcomeBoard1x859Webp from '~/assets/welcome-board-1x-859.webp'
-import welcomeBoard2x1718Png from '~/assets/welcome-board-2x-1718.png'
-import welcomeBoard2x1718Webp from '~/assets/welcome-board-2x-1718.webp'
+// import welcomeBoard1x859Png from '~/assets/welcome-board-1x-859.png'
+// import welcomeBoard1x859Webp from '~/assets/welcome-board-1x-859.webp'
+// import welcomeBoard2x1718Png from '~/assets/welcome-board-2x-1718.png'
+// import welcomeBoard2x1718Webp from '~/assets/welcome-board-2x-1718.webp'
 import { BellBag } from '~/component/BellBag.tsx'
 import { typewriter } from '~/util/typewriter.ts'
 
@@ -30,7 +31,7 @@ const typingObserver = new IntersectionObserver((entries) => {
 					' game.',
 					null,
 					null,
-					'Bells coin is the original meme coin born in 2013,',
+					'Bellscoin is the original meme coin born in 2013,',
 					null,
 					'but was revived in 2023.',
 					null,
@@ -63,25 +64,16 @@ export default function Section2Intro() {
 				<div className="absolute left-0 top-0 h-full w-full bg-[rgba(0,194,137,0.4)] lg:invisible" />
 				<div className="relative">
 					<picture>
-						<source
-							media="(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1300px)"
-							srcSet={`${welcomeBoard2x1718Webp} 859w`}
-						/>
-						<source
-							media="(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1300px)"
-							srcSet={`${welcomeBoard2x1718Png} 859w`}
-						/>
-						<source srcSet={`${welcomeBoard1x859Webp} 859w`} />
 						<img
-							src={welcomeBoard1x859Png}
-							alt="Welcome to Bells coin"
-							width={859}
+							src={welcomeBellscoin}
+							alt="Welcome to Bellscoin"
+							width={540}
 							height={543}
-							className="absolute -left-[40px] -top-[202px] w-[300px] origin-bottom-left lg:-left-[226px] lg:-top-[568px] lg:w-[859px]"
+							className="absolute -left-[40px] -top-[202px] w-[300px] origin-bottom-left lg:-left-[226px] lg:-top-[568px] lg:w-[540px]"
 						/>
 					</picture>
 					<h1 className="-ml-[4px] text-[20px] leading-[1.8] tracking-305 text-white lg:text-[56px]">
-						Bells ($Bel) coin
+						Bellscoin ($Bel) 
 					</h1>
 					<div className="relative text-[14px] leading-[1.2] tracking-305 text-white lg:pr-[80px] lg:text-[30px]">
 						<p
@@ -104,7 +96,7 @@ export default function Section2Intro() {
 							game.
 							<br />
 							<br />
-							Bells coin is the original meme coin born in 2013,
+							Bellscoin is the original meme coin born in 2013,
 							<br />
 							but was revived in 2023.
 							<br />
@@ -152,7 +144,7 @@ export default function Section2Intro() {
 								<use href={`${sprite}#speechBubble`} />
 							</svg>
 							<span className="absolute top-[20px] text-center font-mogra text-[12px] leading-[12px] tracking-305 text-[#F2C834] lg:top-[22px] lg:text-[20px] lg:leading-[1.5]">
-								I need more Bells coin ($BEL)!
+								I need more <span className="text-[#ED2C31]">Bellscoin</span> ($BEL)!
 							</span>
 						</div>
 						<div className="ml-[56px] mt-[9px] h-[20px] w-[20px] rounded-full bg-[#F8D703] drop-shadow-bubble lg:ml-[110px] lg:mt-[11px] lg:h-[42px] lg:w-[42px]" />
@@ -171,9 +163,9 @@ export default function Section2Intro() {
 							<span className="absolute top-[12px] w-full text-center font-mogra text-[12px] leading-[12px] tracking-305 text-[#F2C834] lg:top-[20px] lg:text-[16px] lg:leading-[22px]">
 								It’s so cool
 								<br />
-								<span className="text-[#ED2C31]">meme coin</span>!
+								<span className="text-[#ED2C31]">meme coin!
 								<br />
-								Bells coin
+								Bellscoin</span>
 								<br />
 								is 100%
 								<br />
