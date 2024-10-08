@@ -1,3 +1,6 @@
+import coinmarketcap from '~/assets/section1/coinmarketcap.png'
+import medium from '~/assets/section1/medium.png'
+import miningpoolstats from '~/assets/section1/miningpoolstats.png'
 import sprite from '~/assets/sprite.svg'
 
 export function CoinGecko({ className }: { className?: string }) {
@@ -127,13 +130,7 @@ export function MiningPoolStatus({ className }: { className?: string }) {
 			rel="noreferrer"
 			className="group"
 		>
-			<svg
-				viewBox="0 0 1200 1227"
-				fill="#E60012"
-				className={`group-hover:fill-white group-focus:fill-white ${className}`}
-			>
-				<use href={`${sprite}#twitter`} />
-			</svg>
+			<img src={miningpoolstats} alt="mps" width={40} className={className} />
 		</a>
 	)
 }
@@ -146,13 +143,7 @@ export function Coinmarketcap({ className }: { className?: string }) {
 			rel="noreferrer"
 			className="group"
 		>
-			<svg
-				viewBox="0 0 1200 1227"
-				fill="#E60012"
-				className={`group-hover:fill-white group-focus:fill-white ${className}`}
-			>
-				<use href={`${sprite}#twitter`} />
-			</svg>
+			<img src={coinmarketcap} alt="mps" width={40} className={className} />
 		</a>
 	)
 }
@@ -165,13 +156,7 @@ export function Medium({ className }: { className?: string }) {
 			rel="noreferrer"
 			className="group"
 		>
-			<svg
-				viewBox="0 0 1200 1227"
-				fill="#E60012"
-				className={`group-hover:fill-white group-focus:fill-white ${className}`}
-			>
-				<use href={`${sprite}#twitter`} />
-			</svg>
+			<img src={medium} alt="mps" width={40} className={className} />
 		</a>
 	)
 }
