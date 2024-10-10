@@ -71,7 +71,10 @@ const getYValueAtX = (xValue: string, labels: string[], data: number[]) => {
  * When data is updated or the chart size changes,
  * you may need to adjust absolutely positioned elements.
  */
-export default function EmissionChartLarge() {
+export default function EmissionChartLarge(props: {
+	marketCap: string | number
+}) {
+	const { marketCap } = props
 	const today = dayjs().format('YYYY. M. D.')
 
 	const yValueAtToday = getYValueAtX(today, emissionDates, emissionValues)
@@ -92,6 +95,17 @@ export default function EmissionChartLarge() {
 					<span className="text-[14px] leading-[22px]">
 						(2bells per one block)
 					</span>
+				</p>
+			</div>
+			<div className="absolute bottom-[-120px] left-[300px] rounded-full border-4 border-[#08835E] px-4 text-center font-mogra tracking-305">
+				<p className="text-[24px] text-[#08835E]">
+					{dayjs().format('YYYY/MM/DD')}
+				</p>
+				<p className="uppercase text-[#ED2C31] lg:text-[24px]">
+					Circulation amount
+				</p>
+				<p className="text-[6px] text-[#ED2C31] lg:text-[24px]">
+					{Intl.NumberFormat().format(Number(Number(marketCap).toFixed(0)))} BEL
 				</p>
 			</div>
 			{/* Adjust the positioning and size of Epoch labels as in the second image */}
@@ -137,7 +151,6 @@ export default function EmissionChartLarge() {
 											yMax: yValueAtToday, // 그래프의 중간까지만
 											borderColor: '#5C2CED',
 											borderWidth: 2,
-											
 										},
 										line: {
 											type: 'line',
