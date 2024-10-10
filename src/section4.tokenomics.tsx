@@ -485,16 +485,18 @@ export default function Section4Tokenomics() {
 						, resulting in a structure where scarcity increases rapidly.
 					</p>
 				</div>
-				<Suspense
-					fallback={
-						<div className="mx-auto mt-[18px] w-[340px] lg:mt-[140px] lg:w-[1280px]">
-							<div className="mx-auto w-full pb-[50%]" />
-						</div>
-					}
-				>
-					<EmissionChartSmall />
-					<EmissionChartLarge />
-				</Suspense>
+				<div className="relative">
+					<Suspense
+						fallback={
+							<div className="mx-auto mt-[18px] w-[340px] lg:mt-[140px] lg:w-[1280px]">
+								<div className="mx-auto w-full pb-[50%]" />
+							</div>
+						}
+					>
+						<EmissionChartSmall marketCap={marketCap} />
+						<EmissionChartLarge marketCap={marketCap} />
+					</Suspense>
+				</div>
 			</div>
 		</section>
 	)

@@ -8,6 +8,7 @@ import {
 	Tooltip,
 } from 'chart.js'
 import annotationPlugin from 'chartjs-plugin-annotation'
+import dayjs from 'dayjs'
 import { Line } from 'react-chartjs-2'
 
 import bellBagChart1 from '~/assets/bell-bag-chart-1.png'
@@ -61,7 +62,10 @@ Chart.register(
  * When data is updated or the chart size changes,
  * you may need to adjust absolutely positioned elements.
  */
-export default function EmissionChartSmall() {
+export default function EmissionChartSmall(props: {
+	marketCap: string | number
+}) {
+	const { marketCap } = props
 	return (
 		<div className="relative mx-auto mt-[18px] w-[340px] lg:hidden">
 			<div className="absolute right-[6px] top-[9px] h-[112px] w-[188px] bg-gradient-to-r from-[rgba(43,105,97,0.2)] to-[rgba(24,255,175,0)]">
@@ -76,6 +80,17 @@ export default function EmissionChartSmall() {
 					2,880 Bells
 					<br />
 					<span className="text-[6px] tracking-305">(2bells per 1 block)</span>
+				</p>
+			</div>
+			<div className="absolute bottom-[-40px] left-[80px] rounded-full border-4 border-[#08835E] px-4 text-center font-mogra">
+				<p className="text-[8px] text-[#08835E]">
+					{dayjs().format('YYYY/MM/DD')}
+				</p>
+				<p className="uppercase text-[8px] text-[#ED2C31] ">
+					Circulation amount
+				</p>
+				<p className="text-[8px] text-[#ED2C31] ">
+					{Intl.NumberFormat().format(Number(Number(marketCap).toFixed(0)))} BEL
 				</p>
 			</div>
 			<span className="absolute bottom-[46px] left-[46px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
