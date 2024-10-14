@@ -104,7 +104,7 @@ const linkGroupsSub: LinkGroup[] = [
 		links: [
 			{ text: 'Belldow', href: 'https://bellscoin.meme/' },
 			{ text: 'Bellswall', href: 'https://www.bellswall.com/' },
-			{ text: 'Bell sight', href: 'https://bellsight.xyz/wallet' },
+			{ text: 'Bellsight', href: 'https://bellsight.xyz/' },
 			{ text: 'Bellscoin halving', href: 'https://halving.bellscoin.meme/' },
 			{
 				text: 'Bellscoin calculator',
