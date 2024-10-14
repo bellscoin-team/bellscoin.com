@@ -2,6 +2,9 @@ import thumb1 from '~/assets/section7/thumb1.png'
 import thumb10 from '~/assets/section7/thumb10.png'
 import thumb11 from '~/assets/section7/thumb11.png'
 import thumb12 from '~/assets/section7/thumb12.png'
+import thumb13 from '~/assets/section7/thumb13.png'
+import thumb14 from '~/assets/section7/thumb14.png'
+import thumb15 from '~/assets/section7/thumb15.png'
 import thumb2 from '~/assets/section7/thumb2.png'
 import thumb3 from '~/assets/section7/thumb3.png'
 import thumb4 from '~/assets/section7/thumb4.png'
@@ -92,15 +95,15 @@ export default function Section7Study() {
 				<div className="flex w-full items-center text-center uppercase">
 					<img
 						src={title1}
-						alt="Study $BEL History"
+						alt="Study $BELLS History"
 						className="mx-auto mb-10 w-[60px] lg:w-full"
 					/>
 					<p className="w-[520px] font-chelsea text-[16px] tracking-[10px] text-[#FF0000] lg:text-[56px] lg:tracking-[20px]">
-						Study $BEL history
+						Study $BELLS history
 					</p>
 					<img
 						src={title2}
-						alt="Study $BEL History"
+						alt="Study $BELLS History"
 						className="mx-auto mb-10 w-[60px] lg:w-full"
 					/>
 				</div>
@@ -250,6 +253,31 @@ export default function Section7Study() {
 						badgeText="'24.05.10"
 					/>
 					<Card
+						image={thumb13}
+						description={
+							<>
+								<p>
+									{"On July 13, 2024, Bellscoin experienced a new halving and officially entered Epoch 3 with the creation of the 129,600th block. Although the community used the term 'halving' following Bitcoin's tradition, technically, this is slightly inaccurate."}
+								</p>
+								<br />
+								<p>
+									This is because, excluding the production after Epoch 5, when
+									only 2 Bellscoins are issued per block, over 60% of the total
+									supply was produced in Epoch 2. The production volume will not
+									be halved but will decrease exponentially, increasing the
+									scarcity of Bellscoin.
+								</p>
+							</>
+						}
+						links={[
+							{
+								url: 'https://x.com/BellsChain/status/1811842993579557117',
+								text: 'https://x.com/BellsChain/status/1811842993579557117',
+							},
+						]}
+						badgeText="'24.07.13"
+					/>
+					<Card
 						image={thumb4}
 						description={
 							<>
@@ -277,6 +305,43 @@ export default function Section7Study() {
 							},
 						]}
 						badgeText="'24.07.21"
+					/>
+					<Card
+						image={thumb14}
+						description={
+							<>
+								<p>
+									Bellscoin core team participates in #WDMS2024 as a partner of
+									the @BITMAINtech PoW ecosystem.
+								</p>
+								<br />
+								<p>
+									In addition, the Bellscoin community has participated in
+									Litecoin Foundation events and offline events to foster smooth
+									relationships with miners and encourage their participation in
+									the ecosystem.
+								</p>
+							</>
+						}
+						links={[
+							{
+								url: 'https://x.com/BellsChain/status/1816520540347342970',
+								text: 'https://x.com/BellsChain/status/1816520540347342970',
+							},
+							{
+								url: 'https://x.com/BellsChain/status/1801681668560068814',
+								text: 'https://x.com/BellsChain/status/1801681668560068814',
+							},
+							{
+								url: 'https://x.com/BellsChain/status/1800891401540112549',
+								text: 'https://x.com/BellsChain/status/1800891401540112549',
+							},
+							{
+								url: 'https://x.com/BellsChain/status/1829813060820664645',
+								text: 'https://x.com/BellsChain/status/1829813060820664645',
+							},
+						]}
+						badgeText="'24.07.26"
 					/>
 					<Card
 						image={thumb5}
@@ -311,7 +376,7 @@ export default function Section7Study() {
 								<br />
 								<p>
 									Through the SuitBoy Billy collection, Billy received a
-									donation of 100,000 $BEL from Beltoshi. Thank you, BillyM2K!
+									donation of 100,000 $BELLS from Beltoshi. Thank you, BillyM2K!
 								</p>
 							</>
 						}
@@ -382,6 +447,26 @@ export default function Section7Study() {
 							},
 						]}
 						badgeText="'24.10.3"
+					/>
+					<Card
+						image={thumb15}
+						description={
+							<>
+								<p>It has been revealed that Jihan Wu,</p>
+								<p>the founder of Bitmain,</p>
+								<p>
+									the world’s largest mining machine manufacturer, is following
+									Bellscoin’s official Twitter account, @Bellschain.
+								</p>
+							</>
+						}
+						links={[
+							{
+								url: 'https://x.com/keto_studio/status/1844367997504508387',
+								text: 'https://x.com/keto_studio/status/1844367997504508387',
+							},
+						]}
+						badgeText="'24.10.10"
 					/>
 				</div>
 			</div>

@@ -276,22 +276,22 @@ export default function Section4Tokenomics() {
 						<div className="mt-[16px] grid grid-cols-3 gap-y-[6px] px-[40px] text-[12px] tracking-305 lg:mt-[20px] lg:text-[20px] [&>*:nth-child(3n)]:justify-self-end [&>*:nth-child(3n)]:text-[#F4BE04] [&>*:nth-child(3n+2)]:pl-[4px] [&>*:nth-child(3n+2)]:text-[#ED2C31]">
 							<span>1%</span>
 							<span>10,000</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>5%</span>
 							<span>1,000</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>10%</span>
 							<span>500</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>14%</span>
 							<span>250</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>20%</span>
 							<span>100</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>50%</span>
 							<span>50</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 						</div>
 					</div>
 					<div className="flex items-center justify-evenly px-[4px]">
@@ -328,22 +328,22 @@ export default function Section4Tokenomics() {
 						<div className="mt-[16px] grid grid-cols-3 gap-y-[6px] px-[40px] text-[12px] tracking-305 lg:mt-[20px] lg:text-[20px] [&>*:nth-child(3n)]:justify-self-end [&>*:nth-child(3n)]:text-[#F4BE04] [&>*:nth-child(3n+2)]:pl-[12px] [&>*:nth-child(3n+2)]:text-[#ED2C31]">
 							<span>1%</span>
 							<span>5,000</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>5%</span>
 							<span>500</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>10%</span>
 							<span>250</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>14%</span>
 							<span>125</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>20%</span>
 							<span>50</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>50%</span>
 							<span>20</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 						</div>
 					</div>
 					<div
@@ -391,19 +391,19 @@ export default function Section4Tokenomics() {
 						<div className="mt-[16px] grid grid-cols-3 gap-y-[10px] px-[40px] text-[12px] tracking-305 lg:mt-[20px] lg:gap-y-[12px] lg:text-[20px] [&>*:nth-child(3n)]:justify-self-end [&>*:nth-child(3n)]:text-[#F4BE04] [&>*:nth-child(3n+2)]:pl-[16px] [&>*:nth-child(3n+2)]:text-[#ED2C31]">
 							<span>1%</span>
 							<span>500</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>5%</span>
 							<span>50</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>10%</span>
 							<span>25</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>34%</span>
 							<span>10</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 							<span>50%</span>
 							<span>5</span>
-							<span>$BEL</span>
+							<span>$BELLS</span>
 						</div>
 					</div>
 					<div
@@ -449,7 +449,7 @@ export default function Section4Tokenomics() {
 							Block 518,400
 						</h5>
 						<p className="mt-[24px] text-center text-[14px] tracking-305 text-[#ED2C31] lg:mt-[44px] lg:text-[24px]">
-							2&nbsp;&nbsp;<span className="text-[#F4BE04]">$BEL</span>
+							2&nbsp;&nbsp;<span className="text-[#F4BE04]">$BELLS</span>
 							<br />
 							Per 1 Block
 						</p>
@@ -477,10 +477,10 @@ export default function Section4Tokenomics() {
 						</span>
 					</p>
 					<p className="text-left tracking-305">
-						2After the 5th Epoch, only about 2,880 $BEL will be generated daily,
+						2After the 5th Epoch, only about 2,880 $BELLS will be generated daily,
 						and{' '}
 						<span className="text-[#E60012]">
-							only 1 million $BEL will be issued annually
+							only 1 million $BELLS will be issued annually
 						</span>
 						, resulting in a structure where scarcity increases rapidly.
 					</p>
