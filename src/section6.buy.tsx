@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react'
 // import bellsGenesis31 from '~/assets/Bells Genesis-31.png'
 // import bellsGenesis35 from '~/assets/Bells Genesis-35.png'
 // import bellsGenesis6 from '~/assets/Bells Genesis-6.png'
-import coinex from '~/assets/coinex.svg'
 import nkyc1x94Png from '~/assets/nkyc-1x-94.png'
 import nkyc2x188Png from '~/assets/nkyc-2x-188.png'
 import nkyc2x188Webp from '~/assets/nkyc-2x-188.webp'
@@ -32,6 +31,9 @@ import nkyc2x188Webp from '~/assets/nkyc-2x-188.webp'
 // import pepeMoon2x400Avif from '~/assets/pepe-moon-2x-400.avif'
 // import pepeMoon2x400Jpg from '~/assets/pepe-moon-2x-400.jpg'
 import lfg from '~/assets/section6/LFG520.gif'
+import bit from '~/assets/section6/bit.png'
+import bitkan from '~/assets/section6/bitkan.png'
+import coinex from '~/assets/section6/coinex.svg'
 import exchanges from '~/assets/section6/exchanges520.gif'
 import minerReward from '~/assets/section6/minerReward520.gif'
 import mining from '~/assets/section6/mining520.gif'
@@ -87,7 +89,7 @@ const typingObserver = new IntersectionObserver((entries) => {
 					'IF YOU LIKE ',
 					{
 						tagName: 'span',
-						text: '$BEL',
+						text: '$BELLS',
 						className: 'text-[#ED2C31]',
 					},
 				],
@@ -165,7 +167,7 @@ export default function Section6Buy() {
 							<p className="overflow-hidden break-words">
 								Download <span className="text-[#ED2C31]">Qt wallet</span>
 								<br />
-								and mine <span className="text-[#ED2C31]">$BEL</span> by
+								and mine <span className="text-[#ED2C31]">$BELLS</span> by
 								<br />
 								yourself.
 								<br />
@@ -293,7 +295,7 @@ export default function Section6Buy() {
 								<p className="mt-[6px] text-center lg:mt-[24px]">
 									You can also buy
 									<br />
-									some <span className="text-[#ED2C31]">$BEL</span> on CEX
+									some <span className="text-[#ED2C31]">$BELLS</span> on CEX
 								</p>
 							</div>
 						</div>
@@ -419,7 +421,7 @@ export default function Section6Buy() {
 				<h3 className="font-chelsea text-[30px] lg:text-[60px]">
 					Listing exchanges
 				</h3>
-				<div className="mt-[32px] flex items-center justify-center gap-x-[32px] lg:mt-[48px] lg:gap-x-[80px]">
+				<div className="mt-[32px] flex items-center justify-center gap-x-[24px] lg:mt-[48px] lg:gap-x-[80px] px-[24px]">
 					<a
 						href="https://nonkyc.io/market/BEL_USDT"
 						target="_blank"
@@ -480,6 +482,34 @@ export default function Section6Buy() {
 							loading="lazy"
 						/>
 					</a>
+                    <a
+						href="https://www.bit.com/spot?pair=BELLS-USDT"
+						target="_blank"
+						rel="noreferrer"
+						className="hover:scale-105 focus:scale-105"
+					>
+						<img
+							src={bit}
+							alt="Bit"
+							width={82}
+							className="lg:w-[189px]"
+							loading="lazy"
+						/>
+					</a>
+                    <a
+						href="https://bitkan.com/trade/BELLS-USDT"
+						target="_blank"
+						rel="noreferrer"
+						className="hover:scale-105 focus:scale-105"
+					>
+						<img
+							src={bitkan}
+							alt="Bitkan"
+							width={82}
+							className="lg:w-[189px]"
+							loading="lazy"
+						/>
+					</a>
 				</div>
 				<div className="relative mt-[51px] flex justify-center font-senior text-[16px] leading-[30px] lg:mt-[66px] lg:text-[24px] lg:leading-[1.5]">
 					<p
@@ -501,7 +531,7 @@ export default function Section6Buy() {
 							DISCORD
 						</a>
 						<br />
-						IF YOU LIKE <span className="text-[#ED2C31]">$BEL</span>
+						IF YOU LIKE <span className="text-[#ED2C31]">$BELLS</span>
 					</p>
 				</div>
 			</div>
@@ -509,11 +539,11 @@ export default function Section6Buy() {
 				<img src={bellsGenesis31} alt="" width={90} height={90} />
 				<h3 className="text-[#ED2C31]">Disclaimer</h3>
 				<p className="col-start-2 mb-[32px] mt-[10px] text-[10px] leading-[14px] lg:mb-[40px] lg:text-[20px] lg:leading-[34px]">
-					<span className="text-[#ED2C31]">$BEL</span> coin has no association
+					<span className="text-[#ED2C31]">$BELLS</span> coin has no association
 					with{' '}
 					<span className="text-[#ED2C31]">“Animal Crossing” of Nintendo</span>
 					. This coin is simply paying homage to a meme we all love and
-					recognize. $BEL is a meme coin with no intrinsic value or
+					recognize. $BELLS is a meme coin with no intrinsic value or
 					expectation of financial return. There is no formal team or roadmap.
 					<br />
 					The coin is completely useless and for entertainment purposes only.
@@ -527,7 +557,7 @@ export default function Section6Buy() {
 					maintain this website.
 					<br />
 					<br />
-					<span className="text-[#08835E]">Our $BEL address :</span>
+					<span className="text-[#08835E]">Our $BELLS address :</span>
 					<br />
 					<span className="break-all text-[#7D5252]">
 						BEGJMVqLYRJkGwvwmsZDDjERpzxGqdyzXT

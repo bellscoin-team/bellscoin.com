@@ -65,12 +65,14 @@ const linkGroups: LinkGroup[] = [
 		text: 'EXCHANGES',
 		href: '#exchanges',
 		links: [
-			{ text: 'NONKYC', href: 'https://nonkyc.io/market/BEL_USDT' },
-			{ text: 'XEGGEX', href: 'https://xeggex.com/market/BEL_USDT' },
+			{ text: 'NONKYC.IO', href: 'https://nonkyc.io/market/BEL_USDT' },
+			{ text: 'XEGGEX.COM', href: 'https://xeggex.com/market/BEL_USDT' },
 			{
-				text: 'COINEX',
+				text: 'COINEX.COM',
 				href: 'https://www.coinex.com/ko/exchange/bellscoin-usdt',
 			},
+			{ text: 'BIT.COM', href: 'https://www.bit.com/spot?pair=BELLS-USDT' },
+			{ text: 'BITKAN', href: 'https://bitkan.com/trade/BELLS-USDT' },
 		],
 	},
 	{

@@ -25,7 +25,7 @@ export default function Section3History() {
 				<BackgroundLeaves />
 				<div className="relative mx-auto flex flex-col lg:w-[1080px]">
 					<p className="mx-auto w-[270px] font-chelsea text-[18px] uppercase leading-[22px] tracking-305 text-[#F4BE04] lg:ml-[455px] lg:w-auto lg:text-[34px] lg:leading-[50px]">
-						Bellscoin ($BEL) was
+						Bellscoin ($BELLS) was
 						<br />
 						developed by
 						<br />
