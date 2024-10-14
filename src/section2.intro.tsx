@@ -74,7 +74,7 @@ export default function Section2Intro() {
 						/>
 					</picture>
 					<h1 className="-ml-[4px] text-[20px] leading-[1.8] tracking-305 text-white lg:text-[56px]">
-						Bellscoin ($Bel)
+						Bellscoin ($BELLS)
 					</h1>
 					<div className="relative text-[14px] leading-[1.2] tracking-305 text-white lg:pr-[80px] lg:text-[30px]">
 						<p
@@ -176,7 +176,7 @@ export default function Section2Intro() {
 							</svg>
 							<span className="absolute top-[20px] text-center font-mogra text-[12px] leading-[12px] tracking-305 text-[#F2C834] lg:top-[22px] lg:text-[20px] lg:leading-[1.5]">
 								I need more <span className="text-[#ED2C31]">Bellscoin</span>{' '}
-								($BEL)!
+								($BELLS)!
 							</span>
 						</div>
 						<div className="ml-[56px] mt-[9px] h-[20px] w-[20px] rounded-full bg-[#F8D703] drop-shadow-bubble lg:ml-[110px] lg:mt-[11px] lg:h-[42px] lg:w-[42px]" />

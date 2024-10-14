@@ -165,7 +165,7 @@ export default function Section5About() {
 						in the world.
 					</li>
 					<li>
-						Buy and <span className="text-[#ED2C31]">HODL $BEL</span>.
+						Buy and <span className="text-[#ED2C31]">HODL $BELLS</span>.
 					</li>
 					<li>
 						Buy more if you like
