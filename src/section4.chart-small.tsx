@@ -63,9 +63,9 @@ Chart.register(
  * you may need to adjust absolutely positioned elements.
  */
 export default function EmissionChartSmall(props: {
-	marketCap: string | number
+	currentSupply: string | number
 }) {
-	const { marketCap } = props
+	const { currentSupply } = props
 	return (
 		<div className="relative mx-auto mt-[18px] w-[340px] lg:hidden">
 			<div className="absolute right-[6px] top-[9px] h-[112px] w-[188px] bg-gradient-to-r from-[rgba(43,105,97,0.2)] to-[rgba(24,255,175,0)]">
@@ -90,7 +90,7 @@ export default function EmissionChartSmall(props: {
 					Circulation amount
 				</p>
 				<p className="text-[8px] text-[#ED2C31] ">
-					{Intl.NumberFormat().format(Number(Number(marketCap).toFixed(0)))} BEL
+					{Intl.NumberFormat().format(Number(Number(currentSupply).toFixed(0)))} BEL
 				</p>
 			</div>
 			<span className="absolute bottom-[46px] left-[46px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">

@@ -493,8 +493,8 @@ export default function Section4Tokenomics() {
 							</div>
 						}
 					>
-						<EmissionChartSmall marketCap={marketCap} />
-						<EmissionChartLarge marketCap={marketCap} />
+						<EmissionChartSmall currentSupply={currentSupply} />
+						<EmissionChartLarge currentSupply={currentSupply} />
 					</Suspense>
 				</div>
 			</div>
