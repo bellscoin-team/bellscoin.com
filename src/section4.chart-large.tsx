@@ -72,9 +72,9 @@ const getYValueAtX = (xValue: string, labels: string[], data: number[]) => {
  * you may need to adjust absolutely positioned elements.
  */
 export default function EmissionChartLarge(props: {
-	marketCap: string | number
+	currentSupply: string | number
 }) {
-	const { marketCap } = props
+	const { currentSupply } = props
 	const today = dayjs().format('YYYY. M. D.')
 
 	const yValueAtToday = getYValueAtX(today, emissionDates, emissionValues)
@@ -105,7 +105,7 @@ export default function EmissionChartLarge(props: {
 					Circulation amount
 				</p>
 				<p className="text-[6px] text-[#ED2C31] lg:text-[24px]">
-					{Intl.NumberFormat().format(Number(Number(marketCap).toFixed(0)))} BEL
+					{Intl.NumberFormat().format(Number(Number(currentSupply).toFixed(0)))} BEL
 				</p>
 			</div>
 			{/* Adjust the positioning and size of Epoch labels as in the second image */}
