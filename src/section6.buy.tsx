@@ -513,7 +513,7 @@ export default function Section6Buy() {
 						/>
 					</a>
 					<a
-						href="https://bitkan.com/trade/BELLS-USDT"
+						href="https://www.ourbit.com/exchange/BELLS_USDT?_from=market"
 						target="_blank"
 						rel="noreferrer"
 						className="hover:scale-105 focus:scale-105"
