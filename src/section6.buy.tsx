@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from 'react'
 // import bellsGenesis31 from '~/assets/Bells Genesis-31.png'
 // import bellsGenesis35 from '~/assets/Bells Genesis-35.png'
 // import bellsGenesis6 from '~/assets/Bells Genesis-6.png'
-import nkyc1x94Png from '~/assets/nkyc-1x-94.png'
-import nkyc2x188Png from '~/assets/nkyc-2x-188.png'
-import nkyc2x188Webp from '~/assets/nkyc-2x-188.webp'
+// import nkyc1x94Png from '~/assets/nkyc-1x-94.png'
+// import nkyc2x188Png from '~/assets/nkyc-2x-188.png'
+// import nkyc2x188Webp from '~/assets/nkyc-2x-188.webp'
 // import pepeCex1x520Avif from '~/assets/pepe-cex-1x-520.avif'
 // import pepeCex1x520Jpg from '~/assets/pepe-cex-1x-520.jpg'
 // import pepeCex2x1040Avif from '~/assets/pepe-cex-2x-1040.avif'
@@ -37,6 +37,8 @@ import coinex from '~/assets/section6/coinex.svg'
 import exchanges from '~/assets/section6/exchanges520.gif'
 import minerReward from '~/assets/section6/minerReward520.gif'
 import mining from '~/assets/section6/mining520.gif'
+import nkyc from '~/assets/section6/nonkyc.png'
+import ourbit from '~/assets/section6/ourbit.png'
 import trail1 from '~/assets/trail-1.svg'
 import trail2 from '~/assets/trail-2.svg'
 import xeggex1x215Png from '~/assets/xeggex-1x-215.png'
@@ -421,7 +423,7 @@ export default function Section6Buy() {
 				<h3 className="font-chelsea text-[30px] lg:text-[60px]">
 					Listing exchanges
 				</h3>
-				<div className="mt-[32px] flex items-center justify-center gap-x-[24px] lg:mt-[48px] lg:gap-x-[80px] px-[24px]">
+				<div className="mt-[32px] flex items-center justify-center gap-x-[24px] px-[24px] lg:mt-[48px] lg:gap-x-[80px]">
 					<a
 						href="https://nonkyc.io/market/BEL_USDT"
 						target="_blank"
@@ -431,18 +433,18 @@ export default function Section6Buy() {
 						<picture>
 							<source
 								media="(-webkit-min-device-pixel-ratio: 1.5)"
-								srcSet={`${nkyc2x188Webp} 94w`}
+								srcSet={`${nkyc} 94w`}
 							/>
 							<source
 								media="(-webkit-min-device-pixel-ratio: 1.5)"
-								srcSet={`${nkyc2x188Png} 94w`}
+								srcSet={`${nkyc} 94w`}
 							/>
 							<img
-								src={nkyc1x94Png}
+								src={nkyc}
 								alt="NKYC"
-								width={44}
-								height={42}
-								className="lg:w-[94px]"
+								width={94}
+								height={60}
+								className="lg:w-[160px]"
 								loading="lazy"
 							/>
 						</picture>
@@ -482,7 +484,7 @@ export default function Section6Buy() {
 							loading="lazy"
 						/>
 					</a>
-                    <a
+					<a
 						href="https://www.bit.com/spot?pair=BELLS-USDT"
 						target="_blank"
 						rel="noreferrer"
@@ -496,7 +498,7 @@ export default function Section6Buy() {
 							loading="lazy"
 						/>
 					</a>
-                    <a
+					<a
 						href="https://bitkan.com/trade/BELLS-USDT"
 						target="_blank"
 						rel="noreferrer"
@@ -510,7 +512,25 @@ export default function Section6Buy() {
 							loading="lazy"
 						/>
 					</a>
+					<a
+						href="https://bitkan.com/trade/BELLS-USDT"
+						target="_blank"
+						rel="noreferrer"
+						className="hover:scale-105 focus:scale-105"
+					>
+						<img
+							src={ourbit}
+							alt="ourbit"
+							width={60}
+							className="lg:w-[100px]"
+							loading="lazy"
+						/>
+					</a>
 				</div>
+				<p className='text-[10px] lg:text-[18px] font-senior text-[#ED2C31] w-[900px] mx-auto max-w-full mt-10'>
+					We do not endorse or verify any of the following. Use your best
+					judgement and be careful to mitigate your risk when using any exchange
+				</p>
 				<div className="relative mt-[51px] flex justify-center font-senior text-[16px] leading-[30px] lg:mt-[66px] lg:text-[24px] lg:leading-[1.5]">
 					<p
 						ref={(instance) => {
