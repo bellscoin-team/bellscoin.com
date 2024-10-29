@@ -386,7 +386,7 @@ export default function Section4Tokenomics() {
 						<h5 className="mt-[10px] text-center text-[14px] leading-[14px] tracking-305 text-[#6A4E41] lg:mt-[16px] lg:text-[24px] lg:leading-[26px]">
 							Block
 							<br />
-							259,001 - 518,400
+							259,201 - 518,400
 						</h5>
 						<div className="mt-[16px] grid grid-cols-3 gap-y-[10px] px-[40px] text-[12px] tracking-305 lg:mt-[20px] lg:gap-y-[12px] lg:text-[20px] [&>*:nth-child(3n)]:justify-self-end [&>*:nth-child(3n)]:text-[#F4BE04] [&>*:nth-child(3n+2)]:pl-[16px] [&>*:nth-child(3n+2)]:text-[#ED2C31]">
 							<span>1%</span>
