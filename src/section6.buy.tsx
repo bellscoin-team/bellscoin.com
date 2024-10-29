@@ -35,6 +35,7 @@ import bit from '~/assets/section6/bit.png'
 import bitkan from '~/assets/section6/bitkan.png'
 import coinex from '~/assets/section6/coinex.svg'
 import exchanges from '~/assets/section6/exchanges520.gif'
+import mexc from '~/assets/section6/mexc.png'
 import minerReward from '~/assets/section6/minerReward520.gif'
 import mining from '~/assets/section6/mining520.gif'
 import nkyc from '~/assets/section6/nonkyc.png'
@@ -423,7 +424,7 @@ export default function Section6Buy() {
 				<h3 className="font-chelsea text-[30px] lg:text-[60px]">
 					Listing exchanges
 				</h3>
-				<div className="mt-[32px] flex items-center justify-center gap-x-[24px] px-[24px] lg:mt-[48px] lg:gap-x-[80px]">
+				<div className="mt-[32px] grid grid-cols-4 items-center justify-center gap-x-[12px] px-[24px] lg:mt-[48px] lg:gap-x-[40px] max-w-full w-[1000px] mx-auto">
 					<a
 						href="https://nonkyc.io/market/BEL_USDT"
 						target="_blank"
@@ -523,6 +524,20 @@ export default function Section6Buy() {
 							alt="ourbit"
 							width={60}
 							className="lg:w-[100px]"
+							loading="lazy"
+						/>
+					</a>
+                    <a
+						href="https://www.mexc.com/exchange/BELLS_USDT"
+						target="_blank"
+						rel="noreferrer"
+						className="hover:scale-105 focus:scale-105"
+					>
+						<img
+							src={mexc}
+							alt="mexc"
+							width={60}
+							className="lg:w-[200px]"
 							loading="lazy"
 						/>
 					</a>
