@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react'
+
 import thumb1 from '~/assets/section7/thumb1.png'
 import thumb10 from '~/assets/section7/thumb10.png'
 import thumb11 from '~/assets/section7/thumb11.png'
@@ -30,25 +32,41 @@ interface CardProps {
 	badgeText: string // 왼쪽 상단에 표시될 텍스트
 }
 
-const observer = new IntersectionObserver(
-	(entries) => {
-		entries.forEach((entry) => {
-			entry.target.classList.toggle(
-				'animate-[pop_0.5s_cubic-bezier(0.575,0.000,0.500,1.520)_forwards]',
-				entry.isIntersecting,
-			)
-		})
-	},
-	{ threshold: 0.5 },
-)
-
 function Card({ image, description, links, badgeText }: CardProps) {
+	const [hasBeenVisible, setHasBeenVisible] = useState(false)
+	const cardRef = useRef(null)
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setHasBeenVisible(true)
+					}
+				})
+			},
+			{ threshold: 0.5 },
+		)
+
+		if (cardRef.current) {
+			observer.observe(cardRef.current)
+		}
+
+		// Cleanup observer on unmount
+		return () => {
+			if (cardRef.current) {
+				observer.unobserve(cardRef.current)
+			}
+		}
+	}, [])
 	return (
 		<div
-			ref={(instance) => {
-				instance && observer.observe(instance)
-			}}
-			className="relative flex w-full max-w-full scale-0 flex-col gap-4 rounded-2xl border border-solid border-[#387F33] bg-[#FFE46A] p-2 lg:flex-row"
+			ref={cardRef}
+			className={`relative flex w-full max-w-full scale-0 flex-col gap-4 rounded-2xl border border-solid border-[#387F33] bg-[#FFE46A] p-2 lg:flex-row ${
+				hasBeenVisible
+					? 'animate-[pop_0.5s_cubic-bezier(0.575,0.000,0.500,1.520)_forwards]'
+					: ''
+			}`}
 		>
 			{/* 왼쪽 상단에 빨간 딱지 */}
 			<div className="absolute left-[-10px] top-[-18px] rounded-lg bg-[#ED2C31] px-2 py-1 font-chelsea text-xs tracking-305 text-white">
