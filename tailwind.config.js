@@ -5,6 +5,7 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		fontFamily: {
+			Glowing: ['GlowingBubble', 'sans-serif'],
 			chelsea: "'Chelsea Market', system-ui",
 			mitr: "'Mitr', sans-serif",
 			mochiy: "'Mochiy Pop P One', sans-serif",
@@ -30,7 +31,7 @@ export default {
 					'75%': { transform: 'translateX(5px)' },
 					'100%': { transform: 'translateX(0)' },
 				},
-                'shaking': {
+				shaking: {
 					'0%': { transform: 'translateX(0) rotate(0)' },
 					'15%': { transform: 'translateX(0) rotate(0)' },
 					'25%': { transform: 'rotate(0)' },
@@ -125,5 +126,18 @@ export default {
 				{ values: theme('textShadow') },
 			)
 		}),
+		function ({ addUtilities }) {
+			addUtilities({
+                '.text-stroke_10': {
+					'-webkit-text-stroke': '10px black',
+				},
+				'.text-stroke_6': {
+					'-webkit-text-stroke': '6px black',
+				},
+                '.text-stroke_2': {
+					'-webkit-text-stroke': '2px black',
+				},
+			})
+		},
 	],
 }

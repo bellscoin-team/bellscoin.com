@@ -38,9 +38,7 @@ const chartPoints: Record<string, { img: HTMLImageElement }> = {
 	'2024. 1. 20.': { img: chartPointEpoch2 }, // not exact epoch point, just for presentation
 	'2024. 3. 9.': { img: chartPointEpoch3 },
 	'2024. 6. 7.': { img: chartPointEpoch4 },
-	'2024. 12. 4.': { img: chartPointEpoch5 },
-	'2025. 3. 1.': { img: chartPointEpoch6 },
-	'2025. 6. 1.': { img: chartPointEpoch6 },
+	'2025. 5. 1.': { img: chartPointEpoch5 },
 	'2025. 9. 1.': { img: chartPointEpoch6 },
 	'2025. 12. 1.': { img: chartPointEpoch6 },
 	'2026. 3. 1.': { img: chartPointEpoch6 },
@@ -68,7 +66,7 @@ export default function EmissionChartSmall(props: {
 	const { currentSupply } = props
 	return (
 		<div className="relative mx-auto mt-[18px] w-[340px] lg:hidden">
-			<div className="absolute right-[6px] top-[9px] h-[112px] w-[188px] bg-gradient-to-r from-[rgba(43,105,97,0.2)] to-[rgba(24,255,175,0)]">
+			<div className="absolute right-[6px] top-[9px] h-[112px] w-[144px] bg-gradient-to-r from-[rgba(43,105,97,0.2)] to-[rgba(24,255,175,0)]">
 				<div className="absolute top-[calc(50%+13px)] h-[0.5px] w-full bg-[#08835E]" />
 				<div className="absolute -right-[2px] top-[calc(50%+11px)] h-[5px] w-[5px] bg-[#08835E] [clip-path:polygon(86.6%_50%,0_0,0_100%)]"></div>
 				<div className="absolute top-[calc(50%+14px)] h-[1px] w-[calc(100%-10px)] bg-[#08835E]" />
@@ -99,13 +97,13 @@ export default function EmissionChartSmall(props: {
 			<span className="absolute bottom-[54px] left-[50px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
 				EPOCH2
 			</span>
-			<span className="absolute bottom-[84px] left-[64px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
+			<span className="absolute bottom-[84px] left-[84px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
 				EPOCH3
 			</span>
-			<span className="absolute bottom-[116px] left-[92px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
+			<span className="absolute bottom-[116px] left-[122px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
 				EPOCH4
 			</span>
-			<span className="absolute bottom-[124px] left-[146px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
+			<span className="absolute bottom-[124px] left-[166px] font-mogra text-[10px] tracking-305 text-[#ED2C31]">
 				EPOCH5
 			</span>
 			<div className="relative mx-auto w-full pb-[50%]">

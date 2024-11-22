@@ -5,6 +5,8 @@ import thumb12 from '~/assets/section7/thumb12.png'
 import thumb13 from '~/assets/section7/thumb13.png'
 import thumb14 from '~/assets/section7/thumb14.png'
 import thumb15 from '~/assets/section7/thumb15.png'
+import thumb16 from '~/assets/section7/thumb16.png'
+import thumb17 from '~/assets/section7/thumb17.png'
 import thumb2 from '~/assets/section7/thumb2.png'
 import thumb3 from '~/assets/section7/thumb3.png'
 import thumb4 from '~/assets/section7/thumb4.png'
@@ -253,11 +255,13 @@ export default function Section7Study() {
 						badgeText="'24.05.10"
 					/>
 					<Card
-						image={thumb13}
+						image={thumb15}
 						description={
 							<>
 								<p>
-									{"On July 13, 2024, Bellscoin experienced a new halving and officially entered Epoch 3 with the creation of the 129,600th block. Although the community used the term 'halving' following Bitcoin's tradition, technically, this is slightly inaccurate."}
+									{
+										"On July 13, 2024, Bellscoin experienced a new halving and officially entered Epoch 3 with the creation of the 129,600th block. Although the community used the term 'halving' following Bitcoin's tradition, technically, this is slightly inaccurate."
+									}
 								</p>
 								<br />
 								<p>
@@ -449,7 +453,7 @@ export default function Section7Study() {
 						badgeText="'24.10.3"
 					/>
 					<Card
-						image={thumb15}
+						image={thumb13}
 						description={
 							<>
 								<p>It has been revealed that Jihan Wu,</p>
@@ -467,6 +471,55 @@ export default function Section7Study() {
 							},
 						]}
 						badgeText="'24.10.10"
+					/>
+					<Card
+						image={thumb17}
+						description={
+							<>
+								<p>
+									Since @Litecoin declared itself as a memecoin, the Litecoin
+									intern mentioned that Dogecoin and Bellscoin are part of the
+									Scrypt family, emphasizing that $LTC, $DOGE, and $BELLS
+									deserve a seat at the same table. Bellscoin is starting to
+									gain more attention from a wider audience.
+								</p>
+							</>
+						}
+						links={[
+							{
+								url: 'https://x.com/litecoin/status/1859295293893759411',
+								text: 'https://x.com/litecoin/status/1859295293893759411',
+							},
+							{
+								url: 'https://x.com/litecoin/status/1857481468903141530',
+								text: 'https://x.com/litecoin/status/1857481468903141530',
+							},
+							{
+								url: 'https://x.com/litecoin/status/1857484964989710667',
+								text: 'https://x.com/litecoin/status/1857484964989710667',
+							},
+						]}
+						badgeText="'24.11.16"
+					/>
+					<Card
+						image={thumb16}
+						description={
+							<>
+								<p>
+									BillyM2K stated that Bellscoin, Litecoin, and Dogecoin all
+									belong to the Scrypt family and therefore take care of one
+									another. He also reaffirmed that both Bellscoin and Dogecoin
+									were coins he created.
+								</p>
+							</>
+						}
+						links={[
+							{
+								url: 'https://x.com/BillyM2k/status/1859307337359688037',
+								text: 'https://x.com/BillyM2k/status/1859307337359688037',
+							},
+						]}
+						badgeText="'24.11.21"
 					/>
 				</div>
 			</div>

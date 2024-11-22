@@ -18,6 +18,10 @@ const EPOCHS = [
 		days: 120,
 		emissionsInDay: 120000,
 	},
+    {
+		days: 160,
+		emissionsInDay: 20000,
+	},
 	{
 		days: Number.MAX_SAFE_INTEGER,
 		emissionsInDay: 2880,
