@@ -39,8 +39,7 @@ const chartPoints: Record<string, { img: HTMLImageElement }> = {
 	'2024. 1. 20.': { img: chartPointEpoch2 },
 	'2024. 7. 13.': { img: chartPointEpoch3 },
 	'2024. 11. 6.': { img: chartPointEpoch4 },
-	'2025. 2. 28.': { img: chartPointEpoch5 },
-	'2025. 6. 1.': { img: chartPointEpoch6 },
+	'2025. 5. 10.': { img: chartPointEpoch5 },
 	'2025. 9. 1.': { img: chartPointEpoch6 },
 	'2025. 12. 1.': { img: chartPointEpoch6 },
 	'2026. 3. 1.': { img: chartPointEpoch6 },
@@ -81,7 +80,7 @@ export default function EmissionChartLarge(props: {
 
 	return (
 		<div className="relative mx-auto hidden lg:mt-[140px] lg:block lg:w-[1280px]">
-			<div className="absolute right-[12px] top-[20px] h-[532px] w-[654px] bg-gradient-to-r from-[rgba(43,105,97,0.2)] to-[rgba(24,255,175,0)]">
+			<div className="absolute right-[12px] top-[20px] h-[532px] w-[568px] bg-gradient-to-r from-[rgba(43,105,97,0.2)] to-[rgba(24,255,175,0)]">
 				<div className="absolute top-[calc(50%-2px)] h-[1px] w-full bg-[#08835E]" />
 				<div className="absolute -right-[2px] top-[calc(50%-5px)] h-[7px] w-[7px] bg-[#08835E] [clip-path:polygon(86.6%_50%,0_0,0_100%)]"></div>
 				<div className="absolute top-1/2 h-[2px] w-[calc(100%-13px)] bg-[#08835E]" />
@@ -157,8 +156,8 @@ export default function EmissionChartLarge(props: {
 											borderWidth: 3,
 											borderColor: 'rgba(5, 98, 66, 0.6)',
 											borderDash: [5, 5],
-											yMin: 58_000_000,
-											yMax: 58_000_000,
+											yMin: 60_000_000,
+											yMax: 60_000_000,
 										},
 									},
 								},
