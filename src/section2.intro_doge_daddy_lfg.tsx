@@ -1,7 +1,7 @@
 import mainBackground from '~/assets/main-background.svg'
 import bellsgm from '~/assets/section2/bellsgm.png'
 import doge from '~/assets/section2/doge.png'
-// import thor from '~/assets/section2/thor.png'
+import koon from '~/assets/section2/koon.png'
 import welcomeBellscoin from '~/assets/section2/welcomeBellscoin.png'
 // import welcomeBoard1x859Png from '~/assets/welcome-board-1x-859.png'
 // import welcomeBoard1x859Webp from '~/assets/welcome-board-1x-859.webp'
@@ -71,24 +71,24 @@ export default function Section2Intro() {
 				</div>
 			</div>
 			<div className="font-Glowing text-stroke_6 lg:text-stroke_10 relative flex flex-col items-center text-[60px] lg:text-[160px] leading-[60px] lg:leading-[120px] tracking-[8px] ">
-				<div className='text-center -mb-20 z-10'>
+				<div className='text-center -mb-10 lg:-mb-20 z-10'>
 					<p className="text-yellow-500">DOGE</p>
 					<p className="text-red-600">DADDY!</p>
 					<p className="text-purple-400">LFG!!</p>
 				</div>
 				<div className="relative">
-					<img src={doge} alt="doge" width={300} className='lg:w-[600px]'/>
+					<img src={doge} alt="doge" width={200} className='lg:w-[600px]'/>
 					<img
-						src={doge}
+						src={koon}
 						alt="doge"
-						width={200}
-						className="absolute -bottom-40 -right-80"
+						width={70}
+						className="absolute bottom-[60px] lg:-bottom-[130px] -left-[60px] lg:-right-80 lg:w-[200px]"
 					/>
 					<img
 						src={bellsgm}
 						alt="doge"
-						width={300}
-						className="absolute -right-[260px] bottom-10"
+						width={100}
+						className="absolute -right-[80px] lg:-right-[260px] bottom-10 lg:w-[300px]"
 					/>
 				</div>
 				<p className='text-yellow-300 -mt-20 z-10'>BELLSCOIN</p>
