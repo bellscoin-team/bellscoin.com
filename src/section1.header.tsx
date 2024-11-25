@@ -65,6 +65,7 @@ const linkGroups: LinkGroup[] = [
 		text: 'EXCHANGES',
 		href: '#exchanges',
 		links: [
+			{ text: 'MEXC.COM', href: 'https://www.mexc.com/ko-KR/exchange/BELLS_USDT?_from=market' },
 			{ text: 'NONKYC.IO', href: 'https://nonkyc.io/market/BEL_USDT' },
 			{ text: 'XEGGEX.COM', href: 'https://xeggex.com/market/BEL_USDT' },
 			{
@@ -140,7 +141,7 @@ export default function Section1Header() {
 				aria-hidden={!isNavOpen}
 				className={`${
 					isNavOpen ? 'visible' : 'invisible'
-				} fixed z-[2] h-screen w-screen bg-[rgba(0,0,0,0.5)]`}
+				} fixed z-[50] h-screen w-screen bg-[rgba(0,0,0,0.5)]`}
 				onClick={(e) => {
 					if (e.target === e.currentTarget) {
 						onClose()
