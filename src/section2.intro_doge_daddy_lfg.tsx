@@ -63,9 +63,7 @@ export default function Section2Intro() {
 						<img
 							src={welcomeBellscoin}
 							alt="Welcome to Bellscoin"
-							width={540}
-							height={543}
-							className="absolute -left-[40px] -top-[202px] w-[300px] origin-bottom-left lg:-left-[226px] lg:-top-[568px] lg:w-[540px]"
+							className="absolute -left-[40px] -top-[202px] w-[200px] origin-bottom-left lg:-left-[320px] lg:-top-[568px] lg:w-[540px]"
 						/>
 					</picture>
 				</div>
