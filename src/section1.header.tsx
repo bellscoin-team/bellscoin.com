@@ -280,12 +280,12 @@ export default function Section1Header() {
 					))}
 				</nav>
 			</div>
-			<div className="h-[43px] bg-[#FFE46A] lg:h-[96px]">
-				<nav className="invisible relative z-[1] mx-auto flex h-full max-w-[2560px] items-center justify-end gap-x-[40px] pr-[90px] text-[#FFE46A] lg:visible">
+			<div className="h-[70px] bg-[#FFE46A] lg:h-[96px]">
+				<nav className=" relative z-[50] mx-auto flex h-full max-w-[2560px] items-center justify-end gap-x-[12px] pr-[4px] text-[#FFE46A] lg:gap-x-[40px] lg:pr-[40px]">
 					{linkGroupsSub.map((linkGroup) => (
 						<div
 							key={linkGroup.text}
-							className="group relative font-mogra leading-[1.2] tracking-305 text-[#E60012] group-hover:fill-white group-focus:fill-white lg:visible"
+							className="group invisible relative font-mogra leading-[1.2] tracking-305 text-[#E60012] group-hover:fill-white group-focus:fill-white lg:visible"
 							tabIndex={linkGroup.href ? undefined : 0}
 						>
 							{linkGroup.href ? (
@@ -323,15 +323,21 @@ export default function Section1Header() {
 							) : null}
 						</div>
 					))}
-					<Github className="w-[40px]" />
-					<Twitter className="h-[38px]" />
-					<Telegram className="w-[40px]" />
-					<Discord className="w-[40px]" />
-					<CoinGecko className="w-[40px]" />
-					<Linktree className="h-[38px]" />
-					<MiningPoolStatus className="h-[40px]" />
-					<Coinmarketcap className="h-[40px]" />
-					<Medium className="h-[40px]" />
+					<div className='flex flex-col lg:flex-row gap-2 lg:gap-10'>
+						<div className="flex gap-4 lg:gap-10">
+							<Github className="w-[24px] lg:w-[40px]" />
+							<Twitter className="h-[24px] lg:h-[38px]" />
+							<Telegram className="w-[24px] lg:w-[40px]" />
+							<Discord className="w-[24px] lg:w-[40px]" />
+							<CoinGecko className="w-[24px] lg:w-[40px]" />
+						</div>
+						<div className="flex gap-4 lg:gap-10">
+							<Linktree className="h-[24px] lg:h-[38px]" />
+							<MiningPoolStatus className="w-[24px] h-[24px] lg:w-[40px] lg:h-[40px]" />
+							<Coinmarketcap className="w-[24px] h-[24px] lg:w-[40px] lg:h-[40px]" />
+							<Medium className="w-[24px] h-[24px] lg:w-[40px] lg:h-[40px]" />
+						</div>
+					</div>
 				</nav>
 			</div>
 		</header>

@@ -9,7 +9,7 @@ export default function Section3History() {
 			<div className="relative flex flex-col items-center bg-[#FFFBB4] px-2 pb-[20px] pt-[37px] lg:pb-[258px] lg:pt-[515px]">
 				<BackgroundLeaves />
 				<div className="relative mx-auto flex flex-col items-center">
-					<p className="font-Glowing text-stroke_2 lg:text-stroke_6 text-[40px] lg:text-[80px] uppercase tracking-[8px] text-yellow-300">
+					<p className="text-center font-Glowing text-stroke_2 lg:text-stroke_6 text-[40px] lg:text-[80px] uppercase tracking-[8px] text-yellow-300">
 						We are <span className="text-red-500">Scrypt Family</span>
 					</p>
 					<div className="mt-4 flex flex-col items-center">

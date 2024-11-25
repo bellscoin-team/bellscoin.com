@@ -24,41 +24,59 @@ export default function Section3History() {
 				<BackgroundLeaves />
 				<div className="relative mx-auto flex flex-col ">
 					<div className="flex flex-col items-center">
-						<div className="flex items-center gap-2">
-							<img src={nook} alt="nook" width={60} className='lg:w-[300px]'/>
-							<p className="font-Glowing text-stroke_2 lg:text-stroke_6 text-[40px] lg:text-[80px] tracking-[8px] text-yellow-300">
+						<div className="flex flex-col lg:flex-row items-center gap-2">
+							<img src={nook} alt="nook" width={80} className="lg:w-[300px]" />
+							<p className="font-Glowing text-[36px] tracking-[8px] text-yellow-300 text-stroke_2 lg:text-[80px] lg:text-stroke_6">
 								WHAT IS $BELLS?
 							</p>
 						</div>
-						<div className="font-Glowing text-stroke_2 mt-[40px] lg:mt-[80px] max-w-[800px] text-[24px] lg:text-[40px] text-yellow-300 tracking-[2px] lg:tracking-[0px]">
-							<p>
-								• created by Dogecoin dev{' '}
-								<span className="text-[#ED2C31]">BillyM2K</span>
-							</p>
-							<p></p>
-							<p className="text-[#ED2C31]">
-								• NO VC & KOL, pre-mined, team allocation
-							</p>
-							<p>• Fully decentralized community driven</p>
-							<p className="text-[#ED2C31]">
-								• Proof of work (Scrypt Algorithm)
-							</p>
-							<p className="text-white">
-								• Merge mined with $LTC, $DOGE Network
-							</p>
+						<div className="mt-[40px] max-w-[800px] px-4 font-Glowing text-[24px] tracking-[2px] text-yellow-300 text-stroke_2 lg:mt-[80px] lg:text-[40px] lg:tracking-[0px]">
+							<div className="flex gap-2">
+								<p>•</p>
+								<p>
+									created by Dogecoin dev{' '}
+									<span className="text-[#ED2C31]">BillyM2K</span>
+								</p>
+							</div>
+							<div className="flex gap-2">
+								<p>•</p>
+								<p className="text-[#ED2C31]">
+									NO VC & KOL, pre-mined, team allocation
+								</p>
+							</div>
+							<div className="flex gap-2">
+								<p>•</p>
+
+								<p>Fully decentralized community driven</p>
+							</div>
+							<div className="flex gap-2">
+								<p>•</p>
+								<p className="text-[#ED2C31]">
+									Proof of work (Scrypt Algorithm)
+								</p>
+							</div>
+							<div className="flex gap-2">
+								<p>•</p>
+								<p className="text-white">
+									Merge mined with $LTC, $DOGE Network
+								</p>
+							</div>
 						</div>
 					</div>
 					<div className="mt-12 flex flex-col items-center px-4">
-						<p className="font-Glowing text-stroke_2 lg:text-stroke_6 text-center text-[40px] lg:text-[80px] tracking-[2px] lg:tracking-[8px] text-[#ED2C31]">
+						<p className="text-center font-Glowing text-[40px] tracking-[2px] text-[#ED2C31] text-stroke_2 lg:text-[80px] lg:tracking-[8px] lg:text-stroke_6">
 							DOGE DADDY, SERIOUSLY?
 						</p>
 						<img src={billy_1} alt="billy_1" />
-						<p className="text-[18px] lg:text-[30px] uppercase tracking-[8px] text-[#0000FF] mt-10 font-chelsea">
+						<p className=" text-center mt-10 font-chelsea text-[18px] uppercase tracking-[8px] text-[#0000FF] lg:text-[30px]">
 							yeah, BillyM2k called
 							<br />
 							BEllscoin <span className="text-[#FF0000]">Doge daddy!</span>
 						</p>
-						<a href="https://x.com/BillyM2k/status/1851321730696094018" className='text-[#0000FF] font-chelsea text-[12px] lg:text-[16px]'>
+						<a
+							href="https://x.com/BillyM2k/status/1851321730696094018"
+							className="font-chelsea text-[12px] text-[#0000FF] lg:text-[16px]"
+						>
 							https://x.com/BillyM2k/status/1851321730696094018
 						</a>
 					</div>
