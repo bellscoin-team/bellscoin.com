@@ -281,7 +281,7 @@ export default function Section1Header() {
 				</nav>
 			</div>
 			<div className="h-[70px] bg-[#FFE46A] lg:h-[96px]">
-				<nav className=" relative z-[50] mx-auto flex h-full max-w-[2560px] items-center justify-end gap-x-[12px] pr-[4px] text-[#FFE46A] lg:gap-x-[40px] lg:pr-[40px]">
+				<nav className=" relative z-[30] mx-auto flex h-full max-w-[2560px] items-center justify-end gap-x-[12px] pr-[4px] text-[#FFE46A] lg:gap-x-[40px] lg:pr-[40px]">
 					{linkGroupsSub.map((linkGroup) => (
 						<div
 							key={linkGroup.text}
@@ -303,7 +303,7 @@ export default function Section1Header() {
 								<span className="inline-block w-min">{linkGroup.text}</span>
 							)}
 							{linkGroup.links ? (
-								<ul className="invisible absolute z-[1] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[16px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
+								<ul className="invisible absolute z-[100] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[16px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
 									{linkGroup.links.map((link) => (
 										<li
 											key={link.text}
