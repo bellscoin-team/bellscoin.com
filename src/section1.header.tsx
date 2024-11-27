@@ -236,7 +236,7 @@ export default function Section1Header() {
 					<div className="w-[12px]" />
 					<div className="w-[18px]" />
 				</button>
-				<nav className="invisible relative z-[2] mx-auto flex h-full max-w-[2560px] items-center justify-end space-x-[40px] pr-[90px] text-center font-mogra leading-[1.2] tracking-305 text-white lg:visible">
+				<nav className="invisible relative z-[40] mx-auto flex h-full max-w-[2560px] items-center justify-end space-x-[40px] pr-[90px] text-center font-mogra leading-[1.2] tracking-305 text-white lg:visible">
 					{linkGroups.map((linkGroup) => (
 						<div
 							key={linkGroup.text}
@@ -258,7 +258,7 @@ export default function Section1Header() {
 								<span className="inline-block w-min">{linkGroup.text}</span>
 							)}
 							{linkGroup.links ? (
-								<ul className="invisible absolute z-[1] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[16px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
+								<ul className="invisible absolute z-[100] flex max-w-[240px] flex-col gap-y-[16px] rounded-[13px] bg-[#FFE46A] px-[12px] pb-[18px] pt-[24px] text-left text-[16px] leading-[20px] drop-shadow-bubble group-focus-within:visible group-hover:visible">
 									{linkGroup.links.map((link) => (
 										<li
 											key={link.text}
