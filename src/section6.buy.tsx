@@ -35,6 +35,7 @@ import bit from '~/assets/section6/bit.png'
 import bitkan from '~/assets/section6/bitkan.png'
 import coinex from '~/assets/section6/coinex.svg'
 import exchanges from '~/assets/section6/exchanges520.gif'
+import gateio from '~/assets/section6/gateio.png'
 import mexc from '~/assets/section6/mexc.png'
 import minerReward from '~/assets/section6/minerReward520.gif'
 import mining from '~/assets/section6/mining520.gif'
@@ -424,7 +425,7 @@ export default function Section6Buy() {
 				<h3 className="font-chelsea text-[30px] lg:text-[60px]">
 					Listing exchanges
 				</h3>
-				<div className="mt-[32px] grid grid-cols-4 items-center justify-center gap-x-[12px] px-[24px] lg:mt-[48px] lg:gap-x-[40px] max-w-full w-[1000px] mx-auto">
+				<div className="mx-auto mt-[32px] grid w-[1000px] max-w-full grid-cols-4 items-center justify-center gap-x-[12px] px-[24px] lg:mt-[48px] lg:gap-x-[40px]">
 					<a
 						href="https://nonkyc.io/market/BEL_USDT"
 						target="_blank"
@@ -517,7 +518,7 @@ export default function Section6Buy() {
 						href="https://www.ourbit.com/exchange/BELLS_USDT?_from=market"
 						target="_blank"
 						rel="noreferrer"
-						className="hover:scale-105 focus:scale-105"
+						className="flex justify-center hover:scale-105 focus:scale-105"
 					>
 						<img
 							src={ourbit}
@@ -527,7 +528,7 @@ export default function Section6Buy() {
 							loading="lazy"
 						/>
 					</a>
-                    <a
+					<a
 						href="https://www.mexc.com/exchange/BELLS_USDT"
 						target="_blank"
 						rel="noreferrer"
@@ -541,8 +542,22 @@ export default function Section6Buy() {
 							loading="lazy"
 						/>
 					</a>
+					<a
+						href="https://www.gate.io/trade/BELLS_USDT"
+						target="_blank"
+						rel="noreferrer"
+						className="hover:scale-105 focus:scale-105"
+					>
+						<img
+							src={gateio}
+							alt="gateio"
+							width={60}
+							className="lg:w-[200px]"
+							loading="lazy"
+						/>
+					</a>
 				</div>
-				<p className='text-[10px] lg:text-[18px] font-senior text-[#ED2C31] w-[900px] mx-auto max-w-full mt-10'>
+				<p className="mx-auto mt-10 w-[900px] max-w-full font-senior text-[10px] text-[#ED2C31] lg:text-[18px]">
 					We do not endorse or verify any of the following. Use your best
 					judgement and be careful to mitigate your risk when using any exchange
 				</p>
