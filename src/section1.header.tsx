@@ -66,6 +66,7 @@ const linkGroups: LinkGroup[] = [
 		href: '#exchanges',
 		links: [
 			{ text: 'MEXC.COM', href: 'https://www.mexc.com/ko-KR/exchange/BELLS_USDT?_from=market' },
+			{ text: 'GATE.IO', href: 'https://www.gate.io/trade/BELLS_USDT' },
 			{ text: 'NONKYC.IO', href: 'https://nonkyc.io/market/BEL_USDT' },
 			{ text: 'XEGGEX.COM', href: 'https://xeggex.com/market/BEL_USDT' },
 			{
