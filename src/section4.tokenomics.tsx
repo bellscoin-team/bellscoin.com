@@ -472,7 +472,7 @@ export default function Section4Tokenomics() {
 					<p className="text-left tracking-305">
 						Unlike Bitcoin’s halving mechanism, BellsCoin has{' '}
 						<span className="text-[#E60012]">
-							a structure where the issuance decreases exponentially with each
+							a structure where the issuance decreases logarithmically with each
 							passing epoch.
 						</span>
 					</p>
