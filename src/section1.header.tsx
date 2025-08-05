@@ -53,7 +53,6 @@ const linkGroups: LinkGroup[] = [
 				text: 'NODE(QT) WALLETS',
 				href: 'https://github.com/Nintondo/bellscoinV3',
 			},
-			{ text: 'ORDINALS WALLET', href: 'https://bells.ordinalswallet.com/' },
 			{
 				text: 'NINTONDO WALLET',
 				href: 'https://nintondo.io',
