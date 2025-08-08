@@ -74,7 +74,7 @@ const linkGroups: LinkGroup[] = [
 			},
 			{ text: 'BIT.COM', href: 'https://www.bit.com/spot?pair=BELLS-USDT' },
 			{ text: 'BITKAN', href: 'https://bitkan.com/trade/BELLS-USDT' },
-			{ text: 'OURBIT', href: 'http://ourbit.com/exchange/BELLS_USDT',
+			{ text: 'OURBIT', href: 'http://ourbit.com/exchange/BELLS_USDT'},
 		],
 	},
 	{
