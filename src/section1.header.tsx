@@ -4,9 +4,9 @@ import bellsGenesis37 from '~/assets/Bells Genesis-37.png'
 import bellsGenesis53 from '~/assets/Bells Genesis-53.png'
 import bellsGenesis62 from '~/assets/Bells Genesis-62.png'
 import bellsGenesis63 from '~/assets/Bells Genesis-63.png'
-import bellsGenesis7 from '~/assets/Bells Genesis-7.png'
 import bellsGenesis1 from '~/assets/bellsGenesis1.png'
 import bellsGenesis2 from '~/assets/bellsGenesis2.png'
+import bellsGenesis7 from '~/assets/section1/Bells Genesis-7.png'
 import { useViewportSize } from '~/util/use-viewport-size.ts'
 
 import {
@@ -279,6 +279,14 @@ export default function Section1Header() {
 							) : null}
 						</div>
 					))}
+					<a
+						href="https://ramp.alchemypay.org/?appId=f83Is2y7L425rxl8&crypto=USDT&network=ETH&showTable=buy&fiat=USD&fiatAmount=30"
+						target="_blank"
+						rel="noreferrer"
+						className="inline-flex items-center justify-center rounded-lg bg-[#FFE46A] px-4 py-2 font-bold text-[#E60012] hover:brightness-95"
+					>
+						Buy
+					</a>
 				</nav>
 			</div>
 			<div className="h-[70px] bg-[#FFE46A] lg:h-[96px]">
@@ -341,6 +349,7 @@ export default function Section1Header() {
 					</div>
 				</nav>
 			</div>
+			
 		</header>
 	)
 }

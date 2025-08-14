@@ -23,8 +23,9 @@ export default function Section3History() {
 			<div className="relative bg-[#FFFBB4] pb-[20px] pt-[37px] lg:pb-[258px] lg:pt-[200px]">
 				<BackgroundLeaves />
 				<div className="relative mx-auto flex flex-col ">
+					{/* Embedded AlchemyPay widget under the top nav bar */}
 					<div className="flex flex-col items-center">
-						<div className="flex flex-col lg:flex-row items-center gap-2">
+						<div className="flex flex-col items-center gap-2 lg:flex-row">
 							<img src={nook} alt="nook" width={80} className="lg:w-[300px]" />
 							<p className="font-Glowing text-[36px] tracking-[8px] text-yellow-300 text-stroke_2 lg:text-[80px] lg:text-stroke_6">
 								WHAT IS $BELLS?
@@ -68,7 +69,7 @@ export default function Section3History() {
 							DOGE DADDY, SERIOUSLY?
 						</p>
 						<img src={billy_1} alt="billy_1" />
-						<p className=" text-center mt-10 font-chelsea text-[18px] uppercase tracking-[8px] text-[#0000FF] lg:text-[30px]">
+						<p className=" mt-10 text-center font-chelsea text-[18px] uppercase tracking-[8px] text-[#0000FF] lg:text-[30px]">
 							yeah, BillyM2k called
 							<br />
 							BEllscoin <span className="text-[#FF0000]">Doge daddy!</span>
