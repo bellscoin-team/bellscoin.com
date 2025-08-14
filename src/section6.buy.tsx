@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 // import bellsGenesis31 from '~/assets/Bells Genesis-31.png'
-// import bellsGenesis35 from '~/assets/Bells Genesis-35.png'
-// import bellsGenesis6 from '~/assets/Bells Genesis-6.png'
+// import bellsGenesis35 from '~/assets/section6/Bells Genesis-35.png'
+// import bellsGenesis6 from '~/assets/section6/Bells Genesis-6.png'
 // import nkyc1x94Png from '~/assets/nkyc-1x-94.png'
 // import nkyc2x188Png from '~/assets/nkyc-2x-188.png'
 // import nkyc2x188Webp from '~/assets/nkyc-2x-188.webp'
