@@ -118,7 +118,7 @@ export default function Section3History() {
 								</picture>
 							</div>
 						</div>
-						<div className="absolute mb-[40px] ml-[40px] mt-[40px] flex w-[200px] flex-shrink-0 animate-[jump-shaking-2_.5s_linear_infinite] lg:ml-40">
+						<div className="absolute mb-[40px] ml-[40px] mt-[40px] flex w-[140px] flex-shrink-0 animate-[jump-shaking-2_.5s_linear_infinite] lg:ml-40">
 							<picture>
 								<img
 									src={dog}
