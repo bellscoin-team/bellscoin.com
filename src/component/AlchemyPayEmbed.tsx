@@ -32,9 +32,10 @@ export function AlchemyPayEmbed({
 		let isMounted = true
 		const generate = async () => {
 			try {
-				if (appId && customParameters) {
+				if (appId) {
 					// 사용자가 제공한 코드 형식대로 프로덕션 도메인 URL 구성
-					const url = `https://ramp.alchemypay.org/?appId=${encodeURIComponent(appId)}&${customParameters}`
+					
+					const url = `https://ramp.alchemypay.org/?appId=${encodeURIComponent(appId)}${customParameters?"&"+customParameters:""}`
 					if (isMounted) setSrcUrl(url)
 					return
 				}
