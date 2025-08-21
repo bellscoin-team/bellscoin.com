@@ -25,7 +25,7 @@ export function AlchemyPayEmbed({
 	const [srcUrl, setSrcUrl] = useState<string>('')
 
 	// 테스트 환경용 appId와 secret (실사용 시 교체 필요)
-	const TEST_APP_ID = 'f83Is2y7L425rxl8'
+	const TEST_APP_ID = '0Ik8IL63D7l0356E'
 	const TEST_APP_SECRET = 'YOUR_TEST_SECRET'
 
 	useEffect(() => {
