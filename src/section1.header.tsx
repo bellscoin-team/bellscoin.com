@@ -280,7 +280,7 @@ export default function Section1Header() {
 						</div>
 					))}
 					<a
-						href="https://ramp.alchemypay.org/?appId=f83Is2y7L425rxl8&crypto=USDT&network=ETH&showTable=buy&fiat=USD&fiatAmount=30"
+						href="https://ramp.alchemypay.org/?appId=0Ik8IL63D7l0356E#/index"
 						target="_blank"
 						rel="noreferrer"
 						className="inline-flex items-center justify-center rounded-lg bg-[#FFE46A] px-4 py-2 font-bold text-[#E60012] hover:brightness-95"
