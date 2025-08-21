@@ -54,7 +54,7 @@ export default function App() {
 						<div className="mt-6 flex justify-center">
 							<AlchemyPayEmbed
 								appId="0Ik8IL63D7l0356E"
-								customParameters="crypto=BELLS&network=ETH"
+								customParameters=""
 							/>
 						</div>
 					</div>
