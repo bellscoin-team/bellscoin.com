@@ -61,19 +61,17 @@ export function AlchemyPayEmbed({
 	}, [appId, customParameters, crypto, fiat, fiatAmount, network])
 
 	return (
-		<div className={`flex w-full items-center justify-center ${className}`}>
+		<div className={`flex w-[300px] min-[500px]:w-full items-center justify-center h-[420px] min-[500px]:h-[700px]  ${className}`}>
 			{srcUrl ? (
                 <iframe
 					title="AlchemyPay On/Off Ramp Widget"
 					src={srcUrl}
-					height={700}
-                    frameBorder="no"
+					height={"100%"}
 					allowFullScreen
 					style={{
 						display: 'block',
 						width: '100%',
-						maxHeight: '700px',
-						maxWidth: '500px',
+                        maxWidth: '500px',
 					}}
 				/>
 			) : (
