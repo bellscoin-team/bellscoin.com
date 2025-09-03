@@ -28,14 +28,13 @@ export default function App() {
 				<Section6Buy />
 				<Section7Study />
 				<Section8Donation />
-				
 			</main>
 
 			{/* Floating Pay Button */}
 			<button
 				aria-label="Open payment"
 				onClick={() => setIsPaymentOpen(true)}
-				className="fixed bottom-6 right-6 z-[1000] rounded-full bg-white/90 p-3 shadow-xl hover:scale-105 hover:bg-white transition-transform"
+				className="fixed bottom-6 right-6 z-[1000] rounded-full bg-white/90 p-3 shadow-xl transition-transform hover:scale-105 hover:bg-white"
 			>
 				<img src={creditcardPay} alt="Pay with card" className="h-12 w-12" />
 			</button>
@@ -43,7 +42,7 @@ export default function App() {
 			{/* Payment Modal */}
 			{isPaymentOpen ? (
 				<div className="fixed inset-0 z-[1001] flex items-center justify-center bg-black/50 p-4">
-					<div className="relative w-full max-w-[560px] rounded-xl bg-white p-4 shadow-2xl">
+					<div className="relative w-[340px] max-w-[560px] rounded-xl bg-white p-4 shadow-2xl min-[500px]:w-full">
 						<button
 							aria-label="Close payment"
 							onClick={() => setIsPaymentOpen(false)}
@@ -52,10 +51,7 @@ export default function App() {
 							Close
 						</button>
 						<div className="mt-6 flex justify-center">
-							<AlchemyPayEmbed
-								appId="0Ik8IL63D7l0356E"
-								customParameters=""
-							/>
+							<AlchemyPayEmbed appId="0Ik8IL63D7l0356E" customParameters="" />
 						</div>
 					</div>
 				</div>
