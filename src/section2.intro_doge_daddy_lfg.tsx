@@ -76,129 +76,16 @@ export default function Section2Intro() {
 			<div className="relative flex flex-col items-center font-Glowing text-[60px] leading-[60px] tracking-[8px] text-stroke_6 lg:text-[160px] lg:leading-[120px] lg:text-stroke_10 ">
 				{/* //pay 버튼 추가 */}
 				<div className="alchemy3d-scope mb-6 lg:mb-10">
-					<button className="button-3d" onClick={() => setIsBuyOpen(true)}>
-						<span className="button-text text-stroke_2">
-							<span className="text-[52px]">Buy</span>
+					<button
+						className="relative flex h-[200px] w-[200px] lg:h-[340px] lg:w-[340px] -translate-y-[8px] cursor-pointer items-center justify-center overflow-visible rounded-full border-0 bg-[radial-gradient(circle_at_center,#2a2a2a_0%,#1a1a1a_100%)] text-[40px]  text-black shadow-[0_20px_40px_rgba(0,0,0,0.6),_0_10px_20px_rgba(0,0,0,0.4),_inset_0_-8px_16px_rgba(0,0,0,0.8),_inset_0_8px_16px_rgba(255,255,255,0.1)] outline-none transition-all duration-150 ease-linear hover:-translate-y-[12px] hover:scale-[1.02] hover:shadow-[0_25px_50px_rgba(0,0,0,0.7),_0_15px_25px_rgba(0,0,0,0.5),_inset_0_-8px_16px_rgba(0,0,0,0.9),_inset_0_8px_16px_rgba(255,255,255,0.15)] active:-translate-y-[2px] active:scale-[0.98] active:shadow-[0_8px_16px_rgba(0,0,0,0.4),_0_4px_8px_rgba(0,0,0,0.3),_inset_0_-4px_8px_rgba(0,0,0,0.7),_inset_0_4px_8px_rgba(255,255,255,0.05)] [&::after]:absolute [&::after]:inset-[18px] [&::after]:rounded-full [&::after]:bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.9)_0%,transparent_40%),_linear-gradient(145deg,#fff9c4_0%,#ffeb3b_30%,#ffc107_70%,#ff9800_100%)] [&::after]:shadow-[0_6px_12px_rgba(0,0,0,0.3),_inset_0_-6px_12px_rgba(255,152,0,0.6),_inset_0_6px_12px_rgba(255,255,255,0.8),_inset_0_0_0_1px_rgba(255,255,255,0.4)] [&::after]:content-[''] hover:[&::after]:shadow-[0_8px_16px_rgba(0,0,0,0.4),_inset_0_-6px_12px_rgba(255,152,0,0.7),_inset_0_6px_12px_rgba(255,255,255,0.9),_inset_0_0_0_1px_rgba(255,255,255,0.5)] active:[&::after]:shadow-[0_2px_4px_rgba(0,0,0,0.2),_inset_0_-3px_6px_rgba(255,152,0,0.8),_inset_0_3px_6px_rgba(255,255,255,0.4),_inset_0_0_0_1px_rgba(255,255,255,0.2)] [&::before]:absolute [&::before]:inset-[8px] [&::before]:rounded-full [&::before]:bg-[linear-gradient(145deg,#ff4444_0%,#cc0000_50%,#990000_100%)] [&::before]:shadow-[0_8px_16px_rgba(0,0,0,0.4),_inset_0_-4px_8px_rgba(0,0,0,0.6),_inset_0_4px_8px_rgba(255,100,100,0.8),_inset_0_0_0_2px_rgba(255,255,255,0.2)] [&::before]:content-[''] hover:[&::before]:shadow-[0_10px_20px_rgba(0,0,0,0.5),_inset_0_-4px_8px_rgba(0,0,0,0.7),_inset_0_4px_8px_rgba(255,120,120,0.9),_inset_0_0_0_2px_rgba(255,255,255,0.3)] active:[&::before]:shadow-[0_4px_8px_rgba(0,0,0,0.3),_inset_0_-2px_4px_rgba(0,0,0,0.8),_inset_0_2px_4px_rgba(255,80,80,0.6),_inset_0_0_0_1px_rgba(255,255,255,0.1)]"
+						onClick={() => setIsBuyOpen(true)}
+					>
+						<span className="relative z-10 text-center -mt-2 lg:-mt-4 leading-[1.1] tracking-[0.5px] font-bold text-stroke_2" style={{ fontFamily: 'Arial Black' }}>
+							<span className="text-[52px] lg:text-[100px]">Buy</span>
 							<br />
-							BELLS
+							<span className="text-[38px] lg:text-[70px]">BELLS</span>
 						</span>
 					</button>
-					<style>{`
-						.alchemy3d-scope .button-3d {
-						  width: 340px;
-						  height: 340px;
-						  border-radius: 50%;
-						  border: none;
-						  background:
-							radial-gradient(circle at center, #2a2a2a 0%, #1a1a1a 100%);
-						  box-shadow:
-							0 20px 40px rgba(0, 0, 0, 0.6),
-							0 10px 20px rgba(0, 0, 0, 0.4),
-							inset 0 -8px 16px rgba(0, 0, 0, 0.8),
-							inset 0 8px 16px rgba(255, 255, 255, 0.1);
-						  cursor: pointer;
-						  font-weight: 900;
-						  font-size: 40px;
-						  color:#000000;
-						  transition: all 0.15s ease;
-						  transform: translateY(-8px);
-						  position: relative;
-						  outline: none;
-						  display: flex;
-						  align-items: center;
-						  justify-content: center;
-						  overflow: visible;
-						}
-						.alchemy3d-scope .button-3d::before {
-						  content: '';
-						  position: absolute;
-						  top: 8px;
-						  left: 8px;
-						  right: 8px;
-						  bottom: 8px;
-						  border-radius: 50%;
-						  background:
-							linear-gradient(145deg, #ff4444 0%, #cc0000 50%, #990000 100%);
-						  box-shadow:
-							0 8px 16px rgba(0, 0, 0, 0.4),
-							inset 0 -4px 8px rgba(0, 0, 0, 0.6),
-							inset 0 4px 8px rgba(255, 100, 100, 0.8),
-							inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-						}
-						.alchemy3d-scope .button-3d::after {
-						  content: '';
-						  position: absolute;
-						  top: 18px;
-						  left: 18px;
-						  right: 18px;
-						  bottom: 18px;
-						  border-radius: 50%;
-						  background:
-							radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, transparent 40%),
-							linear-gradient(145deg, #fff9c4 0%, #ffeb3b 30%, #ffc107 70%, #ff9800 100%);
-						  box-shadow:
-							0 6px 12px rgba(0, 0, 0, 0.3),
-							inset 0 -6px 12px rgba(255, 152, 0, 0.6),
-							inset 0 6px 12px rgba(255, 255, 255, 0.8),
-							inset 0 0 0 1px rgba(255, 255, 255, 0.4);
-						}
-						.alchemy3d-scope .button-text {
-						  line-height: 1.1;
-						  text-align: center;
-						  position: relative;
-						  z-index: 10;
-						  text-shadow:
-							0 2px 4px rgba(255, 255, 255, 0.8),
-							0 1px 0 rgba(255, 255, 255, 1),
-							0 -1px 2px rgba(0, 0, 0, 0.1);
-						  font-family: 'Arial Black', sans-serif;
-						  letter-spacing: 0.5px;
-						}
-						.alchemy3d-scope .button-3d:hover {
-						  transform: translateY(-12px) scale(1.02);
-						  box-shadow:
-							0 25px 50px rgba(0, 0, 0, 0.7),
-							0 15px 25px rgba(0, 0, 0, 0.5),
-							inset 0 -8px 16px rgba(0, 0, 0, 0.9),
-							inset 0 8px 16px rgba(255, 255, 255, 0.15);
-						}
-						.alchemy3d-scope .button-3d:hover::before {
-						  box-shadow:
-							0 10px 20px rgba(0, 0, 0, 0.5),
-							inset 0 -4px 8px rgba(0, 0, 0, 0.7),
-							inset 0 4px 8px rgba(255, 120, 120, 0.9),
-							inset 0 0 0 2px rgba(255, 255, 255, 0.3);
-						}
-						.alchemy3d-scope .button-3d:hover::after {
-						  box-shadow:
-							0 8px 16px rgba(0, 0, 0, 0.4),
-							inset 0 -6px 12px rgba(255, 152, 0, 0.7),
-							inset 0 6px 12px rgba(255, 255, 255, 0.9),
-							inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-						}
-						.alchemy3d-scope .button-3d:active {
-						  transform: translateY(-2px) scale(0.98);
-						  box-shadow:
-							0 8px 16px rgba(0, 0, 0, 0.4),
-							0 4px 8px rgba(0, 0, 0, 0.3),
-							inset 0 -4px 8px rgba(0, 0, 0, 0.7),
-							inset 0 4px 8px rgba(255, 255, 255, 0.05);
-						}
-						.alchemy3d-scope .button-3d:active::before {
-						  box-shadow:
-							0 4px 8px rgba(0, 0, 0, 0.3),
-							inset 0 -2px 4px rgba(0, 0, 0, 0.8),
-							inset 0 2px 4px rgba(255, 80, 80, 0.6),
-							inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-						}
-						.alchemy3d-scope .button-3d:active::after {
-						  box-shadow:
-							0 2px 4px rgba(0, 0, 0, 0.2),
-							inset 0 -3px 6px rgba(255, 152, 0, 0.8),
-							inset 0 3px 6px rgba(255, 255, 255, 0.4),
-							inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-						}
-					`}</style>
 				</div>
 				<div className="z-10 -mb-10 text-center lg:-mb-20">
 					<p className="text-yellow-500">DOGE</p>
@@ -236,7 +123,7 @@ export default function Section2Intro() {
 			</div> */}
 			{isBuyOpen ? (
 				<div className="fixed inset-0 z-[1001] flex items-center justify-center bg-black/50 p-4">
-					<div className="relative w-[340px] min-[500px]:w-full max-w-[560px] rounded-xl bg-white p-4 shadow-2xl">
+					<div className="relative w-[340px] max-w-[560px] rounded-xl bg-white p-4 shadow-2xl min-[500px]:w-full">
 						<button
 							aria-label="Close payment"
 							onClick={() => setIsBuyOpen(false)}
@@ -245,10 +132,7 @@ export default function Section2Intro() {
 							Close
 						</button>
 						<div className="mt-6 flex justify-center">
-                        <AlchemyPayEmbed
-								appId="0Ik8IL63D7l0356E"
-								customParameters=""
-							/>
+							<AlchemyPayEmbed appId="0Ik8IL63D7l0356E" customParameters="" />
 						</div>
 					</div>
 				</div>
