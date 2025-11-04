@@ -58,7 +58,7 @@ const linkGroups: LinkGroup[] = [
 				href: 'https://nintondo.io',
 			},
 			{
-				text: 'Coinomi WALLET',
+				text: 'COINOMI WALLET',
 				href: 'https://www.coinomi.com/en/downloads/',
 			},
 		],
