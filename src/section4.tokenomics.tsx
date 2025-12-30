@@ -36,63 +36,46 @@ export default function Section4Tokenomics() {
 			: currentSupply === 'not available' || price === 'not available'
 				? 'not available'
 				: currentSupply * price
-	const [hashRate, setHashRate] = useState<
-		number | 'loading' | 'not available'
-	>('loading')
 
 	useEffect(() => {
-		fetch('https://collection.bellscoin.com/api/gettotalamount')
+		fetch('https://universal.techtree.kr/api/cmc?symbol=BELLS')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok')
 				}
-				return response.json() // JSON 형태로 응답을 파싱
+				return response.json()
 			})
-			.then((data: { total_amount: string }) => {
-				setCurrentSupply(Math.floor(Number(data.total_amount))) // total_amount 값을 사용
+			.then((response: {
+				success: boolean
+				cached: boolean
+				data: {
+					circulating_supply: number
+					total_supply: number
+					price: {
+						usd: number
+					}
+				}
+			}) => {
+				if (response.success && response.data) {
+					const supply = response.data.circulating_supply || response.data.total_supply
+					if (supply !== undefined) {
+						setCurrentSupply(Math.floor(Number(supply)))
+					} else {
+						setCurrentSupply('not available')
+					}
+					if (response.data.price?.usd !== undefined) {
+						setPrice(Number(response.data.price.usd))
+					} else {
+						setPrice('not available')
+					}
+				} else {
+					setCurrentSupply('not available')
+					setPrice('not available')
+				}
 			})
 			.catch(() => {
 				setCurrentSupply('not available')
-			})
-
-		fetch('https://collection.bellscoin.com/api/getprice')
-			.then((response) => {
-				if (!response.ok) {
-					throw new Error('Network response was not ok')
-				}
-				return response.json() // JSON 형태로 응답을 파싱
-			})
-			.then(
-				(data: {
-					data: {
-						id: number
-						price: number
-						coin: string
-						currency: string
-						createdAt: Date
-						updatedAt: Date
-					}
-				}) => {
-					const priceInUsd = data.data.price
-					setPrice(Number(priceInUsd.toString().slice(0, 10)))
-				},
-			)
-			.catch(() => {
 				setPrice('not available')
-			})
-
-		fetch('https://collection.bellscoin.com/api/getnetworkhashps')
-			.then((response) => {
-				if (!response.ok) {
-					throw new Error('Network response was not ok')
-				}
-				return response.json() // JSON 형태로 응답을 파싱
-			})
-			.then((response: { network_hash: 'string' }) => {
-				setHashRate(Number(response.network_hash))
-			})
-			.catch(() => {
-				setHashRate('not available')
 			})
 	}, [])
 
@@ -226,18 +209,6 @@ export default function Section4Tokenomics() {
 							{typeof marketCap === 'number'
 								? (~~marketCap).toLocaleString()
 								: marketCap}
-						</span>
-						<span>
-							Network
-							<br />
-							hashrate
-						</span>
-						<span>
-							{typeof hashRate === 'number'
-								? `${+(hashRate / 1_000_000_000_000)
-										.toFixed(2)
-										.slice(0, 6)} TH/S`
-								: hashRate}{' '}
 						</span>
 					</div>
 				</div>
