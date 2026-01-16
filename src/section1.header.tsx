@@ -61,6 +61,10 @@ const linkGroups: LinkGroup[] = [
 				text: 'COINOMI WALLET',
 				href: 'https://www.coinomi.com/en/downloads/',
 			},
+			{
+				text: 'FX WALLET',
+				href: 'https://www.fxwallet.com/',
+			},
 		],
 	},
 	{
